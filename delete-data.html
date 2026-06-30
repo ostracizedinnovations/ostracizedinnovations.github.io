@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delete My Data — WALKn</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #fdfdfb;
+      color: #121212;
+      line-height: 1.7;
+      padding: 0 16px 64px;
+    }
+
+    .header {
+      background: #121212;
+      margin: 0 -16px;
+      padding: 40px 32px 32px;
+      margin-bottom: 40px;
+    }
+    .header-logo {
+      font-size: 28px;
+      font-weight: 900;
+      color: #ffffff;
+      letter-spacing: 3px;
+    }
+    .header-sub {
+      font-size: 13px;
+      color: #aaaaaa;
+      margin-top: 4px;
+      letter-spacing: 0.5px;
+    }
+
+    .container { max-width: 640px; margin: 0 auto; }
+
+    .meta {
+      font-size: 12px;
+      color: #5a6072;
+      margin-bottom: 32px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .section { margin-bottom: 32px; }
+
+    .section-card {
+      border: 1.5px solid #dde3ed;
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin-bottom: 10px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .section-icon {
+      font-size: 20px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .section-content h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #121212;
+      margin-bottom: 4px;
+    }
+    .section-content p {
+      font-size: 13px;
+      color: #5a6072;
+      line-height: 1.6;
+    }
+
+    h2 {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.3px;
+      color: #5a6072;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .cta {
+      background: #121212;
+      border-radius: 12px;
+      padding: 24px 24px;
+      margin-top: 8px;
+      text-align: center;
+    }
+    .cta p {
+      color: #aaaaaa;
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+    .cta a {
+      display: inline-block;
+      background: #c0392b;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 12px 28px;
+      border-radius: 8px;
+      letter-spacing: 0.5px;
+    }
+    .cta a:hover { background: #a93226; }
+
+    .note {
+      font-size: 12px;
+      color: #5a6072;
+      margin-top: 12px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="header-logo">WALKn</div>
+      <div class="header-sub">Data Deletion Request</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="meta">Last updated: June 2026 &nbsp;·&nbsp; Ostracized Innovations</div>
+
+    <div class="section">
+      <h2>What data we store</h2>
+      <div class="section-card">
+        <div class="section-icon">👤</div>
+        <div class="section-content">
+          <h3>Account identity</h3>
+          <p>Your Firebase user ID and, if you linked a Google account, your Google display name and profile photo URL.</p>
+        </div>
+      </div>
+      <div class="section-card">
+        <div class="section-icon">🏆</div>
+        <div class="section-content">
+          <h3>Leaderboard scores</h3>
+          <p>Your daily, weekly, and monthly step counts and streak length stored in Firestore to power the in-app leaderboards.</p>
+        </div>
+      </div>
+      <div class="section-card">
+        <div class="section-icon">👟</div>
+        <div class="section-content">
+          <h3>Game progress</h3>
+          <p>FootPrints balance, inventory, equipped items, and walk history stored locally on your device and optionally backed up to Firestore.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Delete your data</h2>
+      <p style="font-size:13px;color:#5a6072;margin-bottom:16px;">
+        You can delete your account and all associated data directly inside the WALKn app:
+        open the <strong>Profile tab → Account → Delete Account</strong>.
+        This immediately removes your data from our servers.
+      </p>
+      <p style="font-size:13px;color:#5a6072;margin-bottom:20px;">
+        If you no longer have access to the app or need additional assistance,
+        send us a deletion request by email and we will process it within 30 days.
+      </p>
+      <div class="cta">
+        <p>Include your Firebase UID or the Google account email you used with WALKn.</p>
+        <a href="mailto:ostracizedinnovations@gmail.com?subject=WALKn%20Data%20Deletion%20Request&body=Please%20delete%20my%20WALKn%20account%20and%20all%20associated%20data.%0A%0AAccount%20email%20%2F%20UID%3A%20">
+          Request Data Deletion
+        </a>
+      </div>
+      <p class="note">We will confirm deletion via email within 30 days of receiving your request.</p>
+    </div>
+  </div>
+</body>
+</html>

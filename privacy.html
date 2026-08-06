@@ -43,6 +43,7 @@
       padding-bottom: 16px;
       border-bottom: 1px solid #eee;
     }
+    .meta div { margin-bottom: 2px; }
 
     .section { margin-bottom: 32px; }
 
@@ -71,6 +72,7 @@
       color: #5a6072;
       line-height: 1.6;
     }
+    .section-content p + p { margin-top: 8px; }
 
     h2 {
       font-size: 11px;
@@ -99,6 +101,48 @@
       margin-bottom: 10px;
     }
     .prose ul li { margin-bottom: 4px; }
+    .prose a { color: #c4141c; }
+
+    /* Highlighted "what you can actually do" box — this is the one section
+       most people are looking for, so it reads differently from the rest. */
+    .callout {
+      border: 2px solid #121212;
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-bottom: 32px;
+      background: #ffffff;
+    }
+    .callout h2 { color: #121212; margin-bottom: 8px; }
+    .callout p {
+      font-size: 13px;
+      color: #5a6072;
+      margin-bottom: 8px;
+    }
+    .callout p:last-child { margin-bottom: 0; }
+    .callout strong { color: #121212; }
+
+    table.bases {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12.5px;
+      color: #5a6072;
+      margin-bottom: 10px;
+    }
+    table.bases th, table.bases td {
+      text-align: left;
+      vertical-align: top;
+      padding: 8px 10px;
+      border-bottom: 1px solid #eee;
+    }
+    table.bases th {
+      font-size: 10px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #121212;
+      font-weight: 800;
+      border-bottom: 1.5px solid #dde3ed;
+    }
+    table.bases td:first-child { color: #121212; font-weight: 600; }
 
     .contact-box {
       background: #121212;
@@ -137,7 +181,17 @@
 <div class="container">
 
   <div class="meta">
-    Effective date: July 28, 2026 &nbsp;·&nbsp; Developer: Ostracized Innovations
+    <div>Effective date: August 6, 2026</div>
+    <div>Data controller: Ostracized Innovations (sole developer of WALKn)</div>
+    <div>Contact: <a href="mailto:ostracizedinnovations@gmail.com">ostracizedinnovations@gmail.com</a></div>
+  </div>
+
+  <div class="callout">
+    <h2>Your privacy choices</h2>
+    <p>If you are in the European Economic Area, the United Kingdom, or a US state with a privacy law, WALKn asks for your choices about ads and analytics the first time you open the app.</p>
+    <p><strong>You can change that answer at any time</strong> in the app: <strong>Profile → Support → Ad privacy settings</strong>.</p>
+    <p>If you decline, ads cannot be loaded — so the optional "watch an ad" rewards stop working. Nothing else changes: step tracking, your progress, leaderboards and every other feature work exactly the same either way.</p>
+    <p>You can delete everything we hold at any time via <strong>Profile → Account → Delete Account</strong>.</p>
   </div>
 
   <div class="section">
@@ -162,8 +216,9 @@
     <div class="section-card">
       <div class="section-icon">👟</div>
       <div class="section-content">
-        <h3>Game progress</h3>
-        <p>Step counts, daily history, streaks, goals, shoes, inventory, and Foot Prints currency are stored locally on your device and optionally synced to your personal Firebase account for backup and cross-device restore.</p>
+        <h3>Game progress &amp; activity</h3>
+        <p>Step counts, distance, estimated calories, daily history, streaks, goals, shoes, inventory, and Foot Prints currency are stored locally on your device and optionally synced to your personal Firebase account for backup and cross-device restore.</p>
+        <p>If you fill in the optional calorie profile, the height, weight, sex and age you enter are stored with your settings and used only to make the calorie estimate more accurate.</p>
       </div>
     </div>
 
@@ -171,7 +226,8 @@
       <div class="section-icon">🏆</div>
       <div class="section-content">
         <h3>Leaderboards (optional)</h3>
-        <p>If you choose to link a Google account, we receive your display name, email address, and profile photo from Google Sign-In. Linking is optional and only required for leaderboard participation. Your display name, step count, streak length, and equipped shoe appearance are visible to other players when you compete.</p>
+        <p>If you choose to link a Google account, we receive your display name, email address, and profile photo from Google Sign-In. Linking is optional and only required for leaderboard participation.</p>
+        <p>When you compete, the following becomes readable by other signed-in players: your display name and profile photo, your step counts for the current period, your streak length, your equipped shoe's appearance and condition, and any achievements you have chosen to feature. Your email address is never shown to other players.</p>
       </div>
     </div>
 
@@ -179,7 +235,9 @@
       <div class="section-icon">📢</div>
       <div class="section-content">
         <h3>Ads</h3>
-        <p>WALKn uses Google AdMob to serve ads. AdMob may collect device identifiers and usage signals. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> for details.</p>
+        <p>WALKn shows optional rewarded ads through Google AdMob. AdMob may collect your device's Advertising ID, IP address, and usage signals in order to serve and measure ads, and to limit how often you see the same one.</p>
+        <p>Where consent is required, we ask before any ad is requested, and we do not request one until you have answered. If you allow it, ads may be personalised using the data Google holds. If you decline, no ad is requested at all.</p>
+        <p>See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses data from apps that use its services</a>.</p>
       </div>
     </div>
 
@@ -188,6 +246,7 @@
       <div class="section-content">
         <h3>Usage analytics</h3>
         <p>We use Google Analytics for Firebase to understand whether the app actually works after you install it — for example, whether you granted the location permission, and whether step and distance tracking ever started. These are counts of in-app events, not a record of your activity. Analytics also collects a randomly generated app-instance identifier, basic device information (model and OS version), and an approximate region derived from your IP address. We do not send your name, email address, or GPS coordinates to Analytics.</p>
+        <p>Where consent is required, analytics collection stays switched off unless you allow it.</p>
       </div>
     </div>
 
@@ -195,7 +254,8 @@
       <div class="section-icon">🛠️</div>
       <div class="section-content">
         <h3>Crash &amp; error reports</h3>
-        <p>We use Firebase Crashlytics to record crashes and handled errors so they can be fixed. A report contains the error and its stack trace, your device model and OS version, and a randomly generated installation identifier.</p>
+        <p>We use Firebase Crashlytics to record crashes and handled errors so they can be fixed. A report contains the error and its stack trace, your device model and OS version, and a randomly generated installation identifier. It contains no location data, no account details and nothing you have typed.</p>
+        <p>We rely on our legitimate interest in keeping the app working for this, so it is not covered by the consent choice above. If you would prefer we did not collect crash reports from your device, email us and we will tell you how to opt out.</p>
       </div>
     </div>
 
@@ -203,9 +263,22 @@
       <div class="section-icon">💬</div>
       <div class="section-content">
         <h3>Feedback</h3>
-        <p>If you submit a bug report or suggestion through the app, the submission text and your user ID are stored in our database. We use this only to respond to and improve the app.</p>
+        <p>If you submit a bug report or suggestion through the app, we store the type you selected, the description you wrote, your user ID, and the time you sent it. We use this only to respond to and improve the app. If you instead use the "email a screenshot" option, the message goes to our email inbox rather than our database.</p>
       </div>
     </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section prose">
+    <h2>What we never collect</h2>
+    <ul>
+      <li>Your contacts, photos, files, calendar, microphone or camera.</li>
+      <li>Raw GPS coordinates on our servers — only the distance you covered.</li>
+      <li>Any medical or health-record information. WALKn measures activity (steps, distance, an estimated calorie figure); it is not a medical device and makes no health assessment.</li>
+      <li>Payment details. WALKn has no purchases, so we never see a card.</li>
+    </ul>
+    <p>We do not sell your data, and we do not build advertising profiles ourselves.</p>
   </div>
 
   <div class="divider"></div>
@@ -214,15 +287,38 @@
     <h2>How we use your data</h2>
     <ul>
       <li>To count and verify your steps during walks</li>
+      <li>To detect cheating so leaderboards stay fair</li>
       <li>To maintain your game progress across devices</li>
       <li>To power competitive leaderboards</li>
       <li>To deliver push notifications (level-up completions, crate alerts, streak reminders, shoe wear warnings)</li>
-      <li>To serve ads via Google AdMob</li>
+      <li>To serve optional rewarded ads via Google AdMob</li>
       <li>To measure whether core features — step tracking, distance measurement, and rewards — are working after install</li>
       <li>To diagnose crashes and errors</li>
       <li>To read and respond to your feedback</li>
     </ul>
-    <p>We do not sell your data, and we do not use it for advertising profiles or cross-app tracking beyond what Google AdMob does to serve ads.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section prose">
+    <h2>Legal bases (EEA &amp; UK)</h2>
+    <p>If you are in the EEA or the UK, we rely on the following legal bases under the GDPR:</p>
+    <table class="bases">
+      <thead>
+        <tr><th>Purpose</th><th>Legal basis</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Counting steps, tracking distance, running the game</td><td>Performance of a contract — this is the service you installed the app to receive</td></tr>
+        <tr><td>Cloud backup and cross-device restore</td><td>Performance of a contract</td></tr>
+        <tr><td>Anti-cheat verification</td><td>Legitimate interests — keeping competition fair for everyone</td></tr>
+        <tr><td>Leaderboards and your public player card</td><td>Consent — you opt in by choosing to link a Google account, and can leave at any time</td></tr>
+        <tr><td>Ads, including any personalisation</td><td>Consent</td></tr>
+        <tr><td>Usage analytics</td><td>Consent</td></tr>
+        <tr><td>Crash and error reporting</td><td>Legitimate interests — diagnosing faults so the app keeps working</td></tr>
+        <tr><td>Responding to feedback you send us</td><td>Legitimate interests, or consent where you volunteer the information</td></tr>
+      </tbody>
+    </table>
+    <p>Where we rely on consent, you can withdraw it at any time — see <strong>Your privacy choices</strong> at the top of this page. Withdrawing consent does not affect anything done before you withdrew it.</p>
   </div>
 
   <div class="divider"></div>
@@ -236,40 +332,64 @@
       <li><strong>Google AdMob</strong> — Advertising.</li>
       <li><strong>Google Analytics for Firebase</strong> — Usage analytics.</li>
       <li><strong>Firebase Crashlytics</strong> — Crash and error reporting.</li>
+      <li><strong>Google User Messaging Platform</strong> — Collects and records your privacy choices.</li>
     </ul>
     <p>All are Google services: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+
+    <h3>International transfers</h3>
+    <p>Because WALKn runs on Google's infrastructure, your data may be stored on or accessed from servers outside your country, including in the United States. Google provides the safeguards for these transfers — including the European Commission's Standard Contractual Clauses — as described in its own privacy documentation.</p>
   </div>
 
   <div class="divider"></div>
 
   <div class="section prose">
     <h2>Data retention</h2>
-    <p>Local data remains on your device until you uninstall the app or delete your account. Cloud-synced data — including your game state, leaderboard entries, and settings — is permanently deleted when you use <strong>Profile → Account → Delete Account</strong>. This action cannot be undone.</p>
+    <p>Local data remains on your device until you uninstall the app or delete your account. Cloud-synced data — including your game state, daily history, leaderboard entries, player card and settings — is permanently deleted when you use <strong>Profile → Account → Delete Account</strong>. This action cannot be undone and there is no recovery period.</p>
+    <p>Feedback you send us is kept for as long as it is useful for fixing the issue you reported, and no longer than two years. Crash reports are retained by Firebase Crashlytics for up to 90 days. Analytics data is retained for up to 14 months.</p>
   </div>
 
   <div class="divider"></div>
 
   <div class="section prose">
     <h2>Your rights</h2>
+    <p>These apply to everyone, wherever you live:</p>
     <ul>
       <li><strong>Delete your data</strong> — Remove all cloud data at any time via Profile → Account → Delete Account.</li>
+      <li><strong>Change your privacy choices</strong> — Profile → Support → Ad privacy settings.</li>
       <li><strong>Revoke Google access</strong> — Disconnect Google Sign-In from your Google account's connected apps settings at any time.</li>
-      <li><strong>Contact us</strong> — Email us at <a href="mailto:ostracizedinnovations@gmail.com">ostracizedinnovations@gmail.com</a> with any data-related request.</li>
+      <li><strong>Contact us</strong> — Email <a href="mailto:ostracizedinnovations@gmail.com">ostracizedinnovations@gmail.com</a> with any data-related request.</li>
     </ul>
+
+    <h3>If you are in the EEA or the UK</h3>
+    <p>Under the GDPR you also have the right to:</p>
+    <ul>
+      <li><strong>Access</strong> a copy of the personal data we hold about you.</li>
+      <li><strong>Rectify</strong> data that is inaccurate or incomplete.</li>
+      <li><strong>Erase</strong> your data ("right to be forgotten").</li>
+      <li><strong>Restrict</strong> or <strong>object to</strong> processing based on our legitimate interests.</li>
+      <li><strong>Portability</strong> — receive your data in a structured, machine-readable format.</li>
+      <li><strong>Withdraw consent</strong> at any time, without affecting processing carried out beforehand.</li>
+      <li><strong>Complain</strong> to your local data protection authority. If you are in the EEA you can find yours via the <a href="https://edpb.europa.eu/about-edpb/board/members_en" target="_blank" rel="noopener">European Data Protection Board</a>; in the UK it is the <a href="https://ico.org.uk/" target="_blank" rel="noopener">Information Commissioner's Office</a>.</li>
+    </ul>
+    <p>Email us to exercise any of these. We will respond within one month. We will not charge you or treat you differently for asking.</p>
+
+    <h3>If you are in California or another US state with a privacy law</h3>
+    <p>Depending on your state — including California, Colorado, Connecticut, Utah and Virginia — you may have the right to know what personal information we collect and why, to request a copy, to correct it, to delete it, to opt out of targeted advertising, and not to be discriminated against for exercising any of those rights.</p>
+    <p><strong>We do not sell your personal information</strong>, and we never have. Allowing personalised ads may count as "sharing" for cross-context behavioural advertising, or as "targeted advertising", under some of these laws — declining the ads choice, or changing it later in Profile → Support → Ad privacy settings, opts you out. You can also delete everything via Profile → Account → Delete Account, or email us and we will handle any of the above.</p>
   </div>
 
   <div class="divider"></div>
 
   <div class="section prose">
     <h2>Children's privacy</h2>
-    <p>WALKn is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it.</p>
+    <p>WALKn is not directed at children. We do not knowingly collect personal information from children under 13, or under the applicable age of digital consent in your country — which is between 13 and 16 across the EEA. If you believe a child has provided us with personal information, please contact us and we will delete it.</p>
   </div>
 
   <div class="divider"></div>
 
   <div class="section prose">
     <h2>Changes to this policy</h2>
-    <p>We may update this privacy policy from time to time. The effective date at the top of this page will reflect the most recent revision. Continued use of the app after changes are posted constitutes acceptance of the updated policy.</p>
+    <p>We may update this privacy policy from time to time. The effective date at the top of this page will reflect the most recent revision. If a change materially affects how we use your data, we will ask for your choices again in the app rather than relying on this page alone. Continued use of the app after changes are posted constitutes acceptance of the updated policy.</p>
   </div>
 
   <div class="contact-box">
@@ -278,5 +398,6 @@
   </div>
 
 </div>
+
 </body>
 </html>

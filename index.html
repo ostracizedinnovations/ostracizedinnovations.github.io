@@ -10,7 +10,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="WALKn — Step Counter and RPG" />
   <meta property="og:description" content="Most step counters hand you a number. WALKn gives you a shoe. Free, no purchases, Android and Wear OS." />
-  <meta property="og:image" content="https://ostracizedinnovations.github.io/img/shoe.webp" />
+  <meta property="og:image" content="https://ostracizedinnovations.github.io/img/hero.webp" />
   <meta property="og:url" content="https://ostracizedinnovations.github.io/" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -57,7 +57,7 @@
     .facts span::before { content: "✓ "; color: var(--ok); }
 
     .phone { position: relative; justify-self: center; width: min(300px, 80vw); }
-    .phone img { width: 100%; display: block; border-radius: 26px; border: 6px solid #2a2b30; box-shadow: 0 30px 60px rgba(0,0,0,.6); }
+    .phone img { width: 100%; display: block; border-radius: 28px; border: 8px solid #2a2b30; background: #2a2b30; box-shadow: 0 30px 60px rgba(0,0,0,.6); }
     .phone::after { content: ""; position: absolute; inset: -60px; z-index: -1; background: radial-gradient(closest-side, rgba(215,38,61,.28), transparent 70%); }
 
     .strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--ink-2); padding: 26px 0; }
@@ -65,7 +65,7 @@
     .strip p b { color: var(--crimson); }
 
     .row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; padding: 64px 0; }
-    .feat img { width: 100%; display: block; border-radius: 18px; border: 4px solid #2a2b30; }
+    .feat img { width: 100%; display: block; border-radius: 14px; border: 1px solid var(--line); aspect-ratio: 600 / 701; object-fit: cover; }
     .feat h3 { font-size: 30px; font-weight: 700; margin: 18px 0 6px; }
     .feat h3 small { display: block; font-size: 12px; letter-spacing: .18em; color: var(--crimson); margin-bottom: 6px; font-weight: 600; }
     .feat p { color: var(--muted); font-size: 16px; }
@@ -125,7 +125,7 @@
           <span>Real steps only</span>
         </div>
       </div>
-      <div class="phone"><img src="img/shoe.webp" alt="WALKn's shoe screen: a Legendary shoe with its level, socketed lace and charm, and the stats it has earned" width="540" height="1200" /></div>
+      <div class="phone"><img src="img/hero.webp" alt="WALKn's home screen: today's verified steps above a Legendary shoe with its socketed lace and charm" width="540" height="1152" /></div>
     </section>
   </div>
 
@@ -136,17 +136,17 @@
   <div class="wrap">
     <section class="row" aria-label="What you do in WALKn">
       <div class="feat">
-        <img src="img/crate.webp" alt="A crate opening on the dashboard and revealing a shoe and a repair kit" width="540" height="1200" loading="lazy" />
+        <img src="img/crate.webp" alt="A crate opening and revealing a shoe and a repair kit" width="600" height="701" loading="lazy" />
         <h3><small>Loot</small>Crates drop while you walk</h3>
         <p>Common all the way to Legendary, with shoes, laces, charms, keys and repair kits inside. Your first crate is guaranteed early on — no waiting on a lucky drop.</p>
       </div>
       <div class="feat">
-        <img src="img/leaderboard.webp" alt="The daily steps board showing the top three walkers on a podium" width="540" height="1200" loading="lazy" />
+        <img src="img/leaderboard.webp" alt="The daily steps board showing the top three walkers on a podium" width="600" height="701" loading="lazy" />
         <h3><small>Compete, if you want to</small>Boards of real walkers</h3>
         <p>Daily, weekly and monthly step leaderboards with real rewards, plus a separate streak board for the most stubborn walkers. Everyone on it walked for it.</p>
       </div>
       <div class="feat">
-        <img src="img/shoe.webp" alt="The shoe screen showing a levelled shoe with a lace and charm socketed" width="540" height="1200" loading="lazy" />
+        <img src="img/playercard.webp" alt="A player card showing an equipped Legendary shoe at level 50" width="600" height="701" loading="lazy" />
         <h3><small>Progression</small>A shoe that's actually yours</h3>
         <p>Level it up, push its stats past their limits, socket a charm, weave better laces. Keep it repaired or watch your earnings fall. Feed outgrown gear to the tailor for a shot at a tier above.</p>
       </div>

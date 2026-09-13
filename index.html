@@ -57,7 +57,7 @@
     .facts span::before { content: "✓ "; color: var(--ok); }
 
     .phone { position: relative; justify-self: center; width: min(300px, 80vw); }
-    .phone img { width: 100%; display: block; border-radius: 28px; border: 8px solid #2a2b30; background: #2a2b30; box-shadow: 0 30px 60px rgba(0,0,0,.6); }
+    .phone img { width: 100%; height: auto; display: block; border-radius: 28px; border: 8px solid #2a2b30; background: #2a2b30; box-shadow: 0 30px 60px rgba(0,0,0,.6); }
     .phone::after { content: ""; position: absolute; inset: -60px; z-index: -1; background: radial-gradient(closest-side, rgba(215,38,61,.28), transparent 70%); }
 
     .strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--ink-2); padding: 26px 0; }
@@ -65,7 +65,7 @@
     .strip p b { color: var(--crimson); }
 
     .row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; padding: 64px 0; }
-    .feat img { width: 100%; display: block; border-radius: 14px; border: 1px solid var(--line); aspect-ratio: 600 / 701; object-fit: cover; }
+    .feat img { width: 100%; height: auto; display: block; border-radius: 14px; border: 1px solid var(--line); }
     .feat h3 { font-size: 30px; font-weight: 700; margin: 18px 0 6px; }
     .feat h3 small { display: block; font-size: 12px; letter-spacing: .18em; color: var(--crimson); margin-bottom: 6px; font-weight: 600; }
     .feat p { color: var(--muted); font-size: 16px; }

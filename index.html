@@ -13,6 +13,54 @@
   <meta property="og:image" content="https://ostracizedinnovations.github.io/img/hero.webp" />
   <meta property="og:url" content="https://ostracizedinnovations.github.io/" />
   <meta name="twitter:card" content="summary_large_image" />
+  <!-- Structured data: tells search engines this page IS an app, not an article
+       about one. No aggregateRating on purpose - it must mirror real Play ratings,
+       and with two ratings it would show a low star in results; add it only once
+       the Play average is worth showing, and keep it in sync by hand. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MobileApplication",
+        "@id": "https://ostracizedinnovations.github.io/#app",
+        "name": "WALKn",
+        "alternateName": "WALKn: Step Counter and RPG",
+        "description": "A free step counter and pedometer with a walking RPG built on top: every verified step goes into a shoe that levels up, earns stats and wears down with distance. Crates drop while you walk, daily, weekly and monthly leaderboards rank real walkers, and Wear OS tiles put your rank, crates and shoe on your wrist.",
+        "applicationCategory": "HealthApplication",
+        "applicationSubCategory": "Step counter game",
+        "operatingSystem": "Android 10+, Wear OS",
+        "url": "https://ostracizedinnovations.github.io/",
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.walkn.app.walkn",
+        "installUrl": "https://play.google.com/store/apps/details?id=com.walkn.app.walkn",
+        "image": "https://ostracizedinnovations.github.io/img/hero.webp",
+        "screenshot": [
+          "https://ostracizedinnovations.github.io/img/hero.webp",
+          "https://ostracizedinnovations.github.io/img/crate.webp",
+          "https://ostracizedinnovations.github.io/img/leaderboard.webp",
+          "https://ostracizedinnovations.github.io/img/playercard.webp"
+        ],
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@id": "https://ostracizedinnovations.github.io/#org" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://ostracizedinnovations.github.io/#org",
+        "name": "Ostracized Innovations",
+        "url": "https://ostracizedinnovations.github.io/",
+        "logo": "https://ostracizedinnovations.github.io/img/icon.png",
+        "email": "ostracizedinnovations@gmail.com"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://ostracizedinnovations.github.io/#site",
+        "name": "WALKn",
+        "url": "https://ostracizedinnovations.github.io/",
+        "publisher": { "@id": "https://ostracizedinnovations.github.io/#org" }
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Source+Sans+3:wght@400;600&display=swap" />
   <style>
@@ -143,7 +191,7 @@
       <div class="feat">
         <img src="img/leaderboard.webp" alt="The daily steps board showing the top three walkers on a podium" width="600" height="701" loading="lazy" />
         <h3><small>Compete, if you want to</small>Boards of real walkers</h3>
-        <p>Daily, weekly and monthly step leaderboards with real rewards, plus a separate streak board for the most stubborn walkers. Everyone on it walked for it.</p>
+        <p>Daily, weekly and monthly step leaderboards with crate rewards, plus a separate streak board for the most stubborn walkers. Everyone on it walked for it.</p>
       </div>
       <div class="feat">
         <img src="img/playercard.webp" alt="A player card showing an equipped Legendary shoe at level 50" width="600" height="701" loading="lazy" />
@@ -160,10 +208,10 @@
       </div>
       <ul>
         <li>Free. There is nothing to buy.<small>No in-app purchases, no subscriptions, no paywall.</small></li>
-        <li>No forced ads.<small>Watch one only if you choose to skip a wait.</small></li>
+        <li>No forced ads.<small>Every ad is one you chose to watch.</small></li>
         <li>No background location tracking.<small>WALKn never asks for it.</small></li>
         <li>Every notification is yours to switch off, by kind.</li>
-        <li>Your progress backs up to your Google account.<small>A new phone doesn't cost you your streak.</small></li>
+        <li>Sign in with Google to back up your progress.<small>A new phone picks up exactly where you left off.</small></li>
         <li>On your wrist.<small>Wear OS tiles put your rank, your crates and your shoe a swipe from the watch face.</small></li>
       </ul>
     </section>

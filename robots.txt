@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ostracizedinnovations.github.io/sitemap.xml
+Sitemap: https://walkn.app/sitemap.xml

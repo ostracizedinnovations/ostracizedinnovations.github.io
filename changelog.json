@@ -1,6 +1,43 @@
 {
-  "latest": "2.3.0",
+  "latest": "2.4.0",
   "releases": [
+    {
+      "version": "2.4.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Repairing a shoe at 70% damage or more also uses shoe materials: 1 at 70%, rising to 2 / 4 / 8 / 16 at 100% (Common to Legendary). The REPAIR button shows how many you need and have, and the once-a-day rescue ad can still fix a shoe when you have a kit but too few materials."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "Every Profile tab is redesigned to match Goals: Stats, Settings, Account, Support, Badges and Achievements.",
+            "Achievements: the trail opens at your spot, VIEW ALL opens at the tier you're walking through, and a locked achievement says how far you have to go.",
+            "Badges: DISPLAY and CLAIM work right where each badge sits, and the picker lists your best badge first.",
+            "Settings: the calorie profile saves as you go and shows what it means per step. Account: HOLD TO DELETE, like Scrap.",
+            "A new leaderboard reward screen: you on your podium block under the spotlight, with a plate for each prize. Sharing a win shows the same podium.",
+            "WALKN has its own site: walkn.app.",
+            "A little dust drifts down 3rd place's spotlight on the Leaders podium.",
+            "NO THANKS on the goal card's double-reward offer sits beside WATCH AD, and a learned item in the Tailor's Library opens a bigger pop-up."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Achievement distances no longer round up: at 13.6 mi the tab said 14 with the 14-mile achievement still locked. Rewards show commas.",
+            "Signing out waits for your backup to land, so progress can't be lost when a backup fails.",
+            "Deleting your account asks Google to confirm first, and removes your invite records.",
+            "Backup, restore and feedback in Support say what really happened, including offline.",
+            "Stats no longer compare against today's unfinished day, and a day's Foot Prints show what you earned so far.",
+            "Settings tells you when Android is blocking WALKN's notifications, and calorie profile values are checked.",
+            "Badges, invites and the player card: wrong counts, missing commas and cut-off names are fixed.",
+            "The leaderboard reward screen shows what you actually got, and the damage card fits at large text."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.3.0",
       "sections": [

@@ -1,291 +1,268 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Privacy Policy — WALKn</title>
+  <meta name="description" content="How WALKn handles your data: what it collects, what it never collects, and the choices you have." />
+  <link rel="icon" href="img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Roboto:ital,wght@1,900&family=Inter+Tight:wght@500;600&family=Inter:wght@400;500;600&display=swap" />
   <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0a0d13; --ink: #e8ecf3; --ink-2: #b7bfcd; --label: #8a93a6; --crimson: #ff1e27; --gold: #ffd700; --verified: #2fbf6e;
+      --ed-ink: #ebe8e1; --ed-mute: #9a978f;
+      --display: "Barlow Condensed", "Arial Narrow", sans-serif;
+      --body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --editorial: "Inter Tight", "Inter", -apple-system, "Segoe UI", sans-serif;
+    }
+    @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark; } }
+    :root[data-theme="dark"] { color-scheme: dark; }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.55; -webkit-font-smoothing: antialiased; min-height: 100vh; }
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; }
+    .wrap { width: 100%; max-width: 980px; margin: 0 auto; padding: 0 24px; }
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #fdfdfb;
-      color: #121212;
-      line-height: 1.7;
-      padding: 0 16px 64px;
+    /* the road, far down it and unlit, held still behind everything (the What's new page's ground) */
+    .road { position: fixed; inset: 0; z-index: -1; background: #070a0f url(img/hero_road_nopool.webp) 72% 40% / cover no-repeat; }
+    .road::after { content: ""; position: absolute; inset: 0;
+      background: radial-gradient(120% 90% at 60% 30%, rgba(7,10,15,.76), rgba(7,10,15,.96) 70%), linear-gradient(180deg, rgba(7,10,15,.2), #070a0f 92%); }
+
+    header.top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 24px; max-width: 1240px; margin: 0 auto; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .brand img { width: 34px; height: 34px; border-radius: 9px; box-shadow: 0 0 0 1px rgba(255,255,255,.1), 0 6px 14px rgba(0,0,0,.5); }
+    .wordmark { font-family: Roboto, var(--body); font-weight: 900; font-style: italic; font-size: 26px; letter-spacing: -1px; line-height: 1; color: #fff; }
+    .wordmark b { color: var(--crimson); font-weight: 900; font-size: .82em; display: inline-block; }
+    .wordmark .sa { position: relative; display: inline-block; }
+    .wordmark .sa i { position: absolute; left: 50%; top: 52%; width: .91em; height: calc(.91em * .175); background: var(--crimson); border-radius: 1px; transform: translate(-50%, -50%) rotate(-24deg); }
+    .gp { display: block; line-height: 0; transition: transform .5s cubic-bezier(.3,1.5,.5,1); }
+    .gp img { height: 44px; width: auto; }
+    .gp:hover, .gp:focus-visible { transform: translateY(-2px) scale(1.04); }
+    a:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; border-radius: 4px; }
+
+    .intro { padding: clamp(40px, 9vh, 96px) 0 clamp(28px, 5vh, 48px); }
+    .eyebrow { display: flex; align-items: center; gap: 10px; font: 700 13px/1 var(--display); letter-spacing: .24em; text-transform: uppercase; color: var(--gold); }
+    h1 { font-family: var(--editorial); font-weight: 600; font-size: clamp(40px, 6.4vw, 72px); line-height: 1; letter-spacing: -.032em; color: var(--ed-ink); margin: 18px 0 18px; text-wrap: balance; }
+    .meta { font: 500 14px/1.6 var(--editorial); color: var(--ed-mute); }
+    .meta a { color: var(--ed-ink); }
+
+    /* one section per row: its title on the left, its content on the right, a hairline between (the release rows) */
+    .row { position: relative; display: grid; grid-template-columns: 220px 1fr; gap: 32px; padding: 34px 0 36px; scroll-margin-top: 16px; }
+    .row::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 1px; background: rgba(235,232,225,.14); transform-origin: 0 50%; }
+    .row-h { font: 800 clamp(26px, 3vw, 32px)/1.05 var(--display); letter-spacing: .01em; color: var(--ed-ink); text-wrap: balance; }
+    .row-b { min-width: 0; }
+    .row-b p, .row-b li { font: 500 16px/1.62 var(--editorial); color: var(--ink-2); }
+    .row-b p + p, .row-b p + ul, .row-b ul + p, .row-b table + p { margin-top: 12px; }
+    .row-b strong { color: var(--ed-ink); font-weight: 600; }
+    .row-b a { color: var(--ed-ink); text-decoration: underline; text-decoration-color: rgba(235,232,225,.35); text-underline-offset: 3px; transition: text-decoration-color .2s ease; }
+    .row-b a:hover { text-decoration-color: var(--ed-ink); }
+    .row-b ul { list-style: none; display: grid; gap: 9px; }
+    .row-b li { position: relative; padding-left: 18px; }
+    .row-b li::before { content: ""; position: absolute; left: 2px; top: .8em; width: 6px; height: 1px; background: rgba(235,232,225,.35); }
+    .row-b h3 { display: flex; align-items: center; gap: 11px; margin: 26px 0 10px; font: 700 13px/1.2 var(--display); letter-spacing: .2em; text-transform: uppercase; color: var(--ed-mute); }
+    .row-b > h3:first-child { margin-top: 0; }
+    /* a subsection: the app's Material glyph in a fine ring, like What's new's New / Improved / Fixed */
+    .ic { --c: var(--ed-ink); position: relative; flex: none; width: 28px; height: 28px; border-radius: 50%; border: 1px solid color-mix(in srgb, var(--c) 34%, transparent);
+      background: color-mix(in srgb, var(--c) 7%, transparent); }
+    .ic::after { content: ""; position: absolute; inset: 6px; background: var(--c); -webkit-mask: var(--ico) center / contain no-repeat; mask: var(--ico) center / contain no-repeat; opacity: .9; }
+    .card + .card { margin-top: 26px; }
+    .card h3 { margin: 0 0 8px; color: var(--ed-ink); letter-spacing: .16em; }
+    .card p { padding-left: 39px; }
+    .card p + p { margin-top: 10px; }
+    table.bases { width: 100%; border-collapse: collapse; margin-top: 14px; }
+    table.bases th, table.bases td { text-align: left; vertical-align: top; padding: 11px 12px; border-bottom: 1px solid rgba(235,232,225,.1); font: 500 15px/1.5 var(--editorial); color: var(--ink-2); }
+    table.bases th { font: 700 12px/1 var(--display); letter-spacing: .2em; text-transform: uppercase; color: var(--ed-mute); border-bottom: 1px solid rgba(235,232,225,.22); padding-top: 0; }
+    table.bases td:first-child { color: var(--ed-ink); font-weight: 600; width: 44%; }
+    table.bases tbody tr { transition: background .25s ease; }
+    table.bases tbody tr:hover { background: rgba(255,255,255,.025); }
+
+    /* the one section most people come for: lit gold, like the live release's row */
+    .row.lead .row-h { color: var(--gold); }
+    .row.lead .row-b { padding: 20px 22px; border: 1px solid rgba(255,215,0,.3); border-radius: 14px; background: linear-gradient(180deg, rgba(255,215,0,.05), rgba(255,215,0,.015));
+      box-shadow: 0 0 40px rgba(255,180,40,.06); }
+    .row.lead .row-b p { color: var(--ed-ink); }
+    .row-h .ic { --c: var(--gold); display: block; margin-bottom: 14px; width: 34px; height: 34px; }
+    .row-h .ic::after { inset: 7px; }
+
+    /* the studio's sign-off */
+    .contact { display: flex; align-items: center; gap: 18px; margin: 12px 0 88px; padding: 22px 24px; border: 1px solid rgba(235,232,225,.14); border-radius: 14px; background: rgba(7,10,15,.5); }
+    .contact img { width: 78px; flex: none; }
+    .contact .studio { font: 700 13px/1 var(--display); letter-spacing: .24em; color: var(--ed-mute); margin-bottom: 8px; }
+    .contact a { font: 600 17px/1.3 var(--editorial); color: var(--ed-ink); text-decoration: none; border-bottom: 1px solid rgba(235,232,225,.3); transition: border-color .25s ease; }
+    .contact a:hover { border-color: var(--ed-ink); }
+
+    /* delete: the request button, the app's crimson, with the mail glyph */
+    .cta { margin-top: 22px; padding: 24px; border: 1px solid rgba(255,30,39,.28); border-radius: 14px; background: linear-gradient(180deg, rgba(255,30,39,.07), rgba(255,30,39,.02)); }
+    .cta p { color: var(--ed-ink) !important; margin-bottom: 18px; }
+    .cta a { display: inline-flex; align-items: center; gap: 10px; padding: 13px 22px 13px 18px; border-radius: 999px; background: var(--crimson); color: #fff; text-decoration: none;
+      font: 700 15px/1 var(--editorial); letter-spacing: .01em; box-shadow: 0 10px 28px rgba(255,30,39,.28), inset 0 1px 0 rgba(255,255,255,.2);
+      transition: transform .45s cubic-bezier(.3,1.5,.5,1), box-shadow .3s ease, background .3s ease; }
+    .cta a::before { content: ""; width: 18px; height: 18px; background: #fff; -webkit-mask: url(img/pv_mail.svg) center / contain no-repeat; mask: url(img/pv_mail.svg) center / contain no-repeat; }
+    .cta a:hover, .cta a:focus-visible { transform: translateY(-2px); box-shadow: 0 16px 36px rgba(255,30,39,.38), inset 0 1px 0 rgba(255,255,255,.2); background: #ff3b43; }
+    .note { margin-top: 14px; font-size: 14px !important; color: var(--ed-mute) !important; }
+    .row-b .path strong { display: inline-block; padding: 1px 9px; margin: 0 1px; border: 1px solid rgba(235,232,225,.22); border-radius: 7px; background: rgba(255,255,255,.04); font-weight: 600; }
+
+    /* each row arrives as it scrolls in: its hairline draws, then the title, then the content */
+    @media (prefers-reduced-motion: no-preference) {
+      .intro > * { opacity: 0; transform: translateY(18px); animation: rise .9s cubic-bezier(.2,.8,.2,1) both; }
+      .intro .eyebrow { animation-delay: .05s; } .intro h1 { animation-delay: .15s; } .intro .meta { animation-delay: .3s; }
+      .row::before { transform: scaleX(0); transition: transform 1.1s cubic-bezier(.6,0,.2,1); }
+      .row > * { opacity: 0; transform: translateY(16px); transition: opacity .7s ease, transform .9s cubic-bezier(.2,.8,.2,1); }
+      .row > :last-child { transition-delay: .12s; }
+      .row .ic { transform: scale(.6); opacity: 0; transition: transform .6s cubic-bezier(.3,1.6,.5,1) .3s, opacity .4s ease .3s; }
+      .row.in::before { transform: none; }
+      .row.in > * { opacity: 1; transform: none; }
+      .row.in .ic { transform: none; opacity: 1; }
+    }
+    @keyframes rise { to { opacity: 1; transform: none; } }
+
+    footer { position: relative; padding: 24px 0 28px; background: rgba(7,10,15,.55); }
+    footer::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 1px; background: rgba(235,232,225,.16); }
+    footer .wrap { max-width: 1240px; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+    footer nav { display: flex; gap: 28px; flex-wrap: wrap; }
+    footer nav a { position: relative; font: 500 14px/1.4 var(--editorial); color: var(--ed-mute); text-decoration: none; transition: color .25s ease; }
+    footer nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -3px; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: 0 50%; transition: transform .35s cubic-bezier(.3,.7,.2,1); }
+    footer nav a:hover, footer nav a:focus-visible, footer nav a[aria-current] { color: var(--ed-ink); }
+    footer nav a:hover::after, footer nav a:focus-visible::after, footer nav a[aria-current]::after { transform: none; }
+    .foot-credit { display: flex; align-items: center; gap: 12px; font: 500 13px/1.35 var(--editorial); color: var(--ed-mute); }
+    .foot-credit b { display: block; font-weight: 600; color: var(--ed-ink); }
+    .foot-credit img { width: 64px; }
+
+    @media (max-width: 760px) {
+      header.top { padding: 16px; }
+      .wordmark { font-size: 22px; }
+      .gp img { height: 36px; }
+      .wrap { padding: 0 16px; }
+      .row { grid-template-columns: 1fr; gap: 14px; padding: 28px 0 30px; }
+      .card p { padding-left: 0; }
+      .row.lead .row-b { padding: 16px; }
+      table.bases td:first-child { width: auto; }
+      table.bases th, table.bases td { padding: 10px 8px; font-size: 14px; }
+      .contact { flex-direction: column; align-items: flex-start; }
+      footer .wrap { flex-direction: column; align-items: flex-start; gap: 14px; }
+      footer nav { gap: 18px; }
     }
 
-    .header {
-      background: #121212;
-      margin: 0 -16px;
-      padding: 40px 32px 32px;
-      margin-bottom: 40px;
+    /* 16.13 · the standalone pages - the addresses Play links to, so each stays ONE COMPLETE PAGE that reads top to bottom
+       with no script (Google checks this URL; the homepage's frames are a second presentation read FROM it). The 15.6
+       catch-up: the What's new page's pinned site bar (the page's own name lit crimson), crimson focus and scrollbar, the
+       footer's link row gone (the bar carries it). APPROVED as R: the page's sections as a pinned strip under the bar
+       that follows the reading, and the frames' touches the text already carries - every in-app path as the step chip,
+       the "We do not sell" lines lit gold, the legal bases coloured by kind (each a wrap round words already there).
+       (B a contents column at the left and C a contents list + back-to-top were the options.) */
+    body a:focus-visible { outline-color: #ff1e27; }
+    body { scrollbar-color: rgba(255,30,39,.7) #070a0f; }
+    .sbar { display: flex; position: sticky; top: 0; z-index: 30; height: 64px; align-items: center; gap: 16px; padding: 0 24px;
+      background: linear-gradient(180deg, rgba(7,10,15,.86), rgba(7,10,15,.66)); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); box-shadow: 0 1px 0 rgba(235,232,225,.1); }
+    .sbar nav { display: flex; gap: 4px; margin: 0 auto; }
+    .sbar nav a { display: flex; align-items: center; gap: 8px; padding: 9px 14px; border-radius: 999px; text-decoration: none; font: 600 14px/1 var(--editorial); color: var(--ed-mute); white-space: nowrap; transition: color .25s ease, background .25s ease; }
+    .sbar nav a i { width: 16px; height: 16px; background: currentColor; -webkit-mask: var(--ico) center / contain no-repeat; mask: var(--ico) center / contain no-repeat; opacity: .8; }
+    .sbar nav a:hover { color: var(--ed-ink); background: rgba(255,30,39,.08); }
+    .sbar nav a[aria-current] { color: #fff; background: linear-gradient(180deg, #ff3a42, #ff1e27 60%, #d3121b); box-shadow: 0 0 16px rgba(255,30,39,.4); }
+    .sbar .gp img { height: 38px; }
+    .sstrip { display: flex; position: sticky; top: 64px; z-index: 29; gap: 2px; padding: 6px 16px; overflow-x: auto; scrollbar-width: none; justify-content: safe center;
+      background: rgba(7,10,15,.72); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(235,232,225,.08); }
+    .sstrip button { flex: none; border: 0; background: none; cursor: pointer; padding: 6px 10px; border-radius: 999px; font: 700 11.5px/1 var(--display); letter-spacing: .12em; text-transform: uppercase; color: var(--ed-mute); transition: color .25s ease, background .25s ease; }
+    .sstrip button:hover { color: var(--ed-ink); }
+    .sstrip button.on { color: #ff5058; background: rgba(255,30,39,.12); }
+    .sstrip button:focus-visible { outline: 2px solid #ff1e27; outline-offset: 2px; }
+    .row { scroll-margin-top: 118px; }
+    .row-b .lg-path { display: inline-block; white-space: nowrap; padding: 1px 9px; margin: 0 1px; border-radius: 7px; border: 1px solid rgba(255,215,0,.35); background: rgba(255,215,0,.07); color: var(--ed-ink); font-weight: 600; }
+    .row-b .lit { color: var(--ed-ink); font-weight: 600; background: linear-gradient(transparent 62%, rgba(255,215,0,.22) 62%); }
+    table.bases td .k { font-weight: 600; }
+    table.bases td .k.consent { color: var(--gold); } table.bases td .k.legit { color: #6f9bff; } table.bases td .k.contract { color: var(--ed-ink); }
+    @media (max-width: 760px) {
+      .sbar { padding: 0 12px !important; gap: 8px !important; }
+      .sbar nav a span { display: none; } .sbar nav a { padding: 10px; } .sbar .wordmark { display: none; } .sbar .gp img { height: 32px; }
+      .sstrip { justify-content: flex-start; }
     }
-    .header-logo {
-      font-size: 28px;
-      font-weight: 900;
-      color: #ffffff;
-      letter-spacing: 3px;
-    }
-    .header-sub {
-      font-size: 13px;
-      color: #aaaaaa;
-      margin-top: 4px;
-      letter-spacing: 0.5px;
-    }
-
-    .container { max-width: 640px; margin: 0 auto; }
-
-    .meta {
-      font-size: 12px;
-      color: #5a6072;
-      margin-bottom: 32px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid #eee;
-    }
-    .meta div { margin-bottom: 2px; }
-
-    .section { margin-bottom: 32px; }
-
-    .section-card {
-      border: 1.5px solid #dde3ed;
-      border-radius: 10px;
-      padding: 16px 18px;
-      margin-bottom: 10px;
-      display: flex;
-      gap: 14px;
-      align-items: flex-start;
-    }
-    .section-icon {
-      font-size: 20px;
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-    .section-content h3 {
-      font-size: 14px;
-      font-weight: 700;
-      color: #121212;
-      margin-bottom: 4px;
-    }
-    .section-content p {
-      font-size: 13px;
-      color: #5a6072;
-      line-height: 1.6;
-    }
-    .section-content p + p { margin-top: 8px; }
-
-    h2 {
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 1.3px;
-      color: #5a6072;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
-
-    .prose h3 {
-      font-size: 15px;
-      font-weight: 700;
-      color: #121212;
-      margin: 24px 0 6px;
-    }
-    .prose p {
-      font-size: 13px;
-      color: #5a6072;
-      margin-bottom: 10px;
-    }
-    .prose ul {
-      font-size: 13px;
-      color: #5a6072;
-      padding-left: 20px;
-      margin-bottom: 10px;
-    }
-    .prose ul li { margin-bottom: 4px; }
-    .prose a { color: #c4141c; }
-
-    /* Highlighted "what you can actually do" box — this is the one section
-       most people are looking for, so it reads differently from the rest. */
-    .callout {
-      border: 2px solid #121212;
-      border-radius: 10px;
-      padding: 18px 20px;
-      margin-bottom: 32px;
-      background: #ffffff;
-    }
-    .callout h2 { color: #121212; margin-bottom: 8px; }
-    .callout p {
-      font-size: 13px;
-      color: #5a6072;
-      margin-bottom: 8px;
-    }
-    .callout p:last-child { margin-bottom: 0; }
-    .callout strong { color: #121212; }
-
-    table.bases {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 12.5px;
-      color: #5a6072;
-      margin-bottom: 10px;
-    }
-    table.bases th, table.bases td {
-      text-align: left;
-      vertical-align: top;
-      padding: 8px 10px;
-      border-bottom: 1px solid #eee;
-    }
-    table.bases th {
-      font-size: 10px;
-      letter-spacing: 0.8px;
-      text-transform: uppercase;
-      color: #121212;
-      font-weight: 800;
-      border-bottom: 1.5px solid #dde3ed;
-    }
-    table.bases td:first-child { color: #121212; font-weight: 600; }
-
-    .contact-box {
-      background: #121212;
-      border-radius: 10px;
-      padding: 20px 24px;
-      text-align: center;
-      margin-top: 40px;
-    }
-    .contact-box .studio {
-      font-size: 10px;
-      font-weight: 800;
-      letter-spacing: 1.5px;
-      color: #aaaaaa;
-      margin-bottom: 6px;
-    }
-    .contact-box a {
-      color: #ff1e27;
-      font-size: 13px;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    .contact-box a:hover { text-decoration: underline; }
-
-    .divider { height: 1px; background: #eee; margin: 32px 0; }
   </style>
 </head>
 <body>
+  <div class="road" aria-hidden="true"></div>
+  <header class="sbar">
+    <a class="brand" href="index.html" aria-label="WALKn home"><img src="img/icon.png" alt="" width="34" height="34" /><span class="wordmark">W<span class="sa">A<i></i></span>LK<b>n</b></span></a>
+    <nav aria-label="Site">
+      <a href="index.html"><i style="--ico: url(img/icon_home.svg)" aria-hidden="true"></i><span>Home</span></a>
+      <a href="changelog.html"><i style="--ico: url(img/icon_new.svg)" aria-hidden="true"></i><span>What's new</span></a>
+      <a href="privacy.html" aria-current="page"><i style="--ico: url(img/pv_choices.svg)" aria-hidden="true"></i><span>Privacy</span></a>
+      <a href="delete-data.html"><i style="--ico: url(img/pv_delete.svg)" aria-hidden="true"></i><span>Delete your data</span></a>
+      <a href="mailto:ostracizedinnovations@gmail.com"><i style="--ico: url(img/pv_mail.svg)" aria-hidden="true"></i><span>Contact</span></a>
+    </nav>
+    <a class="gp" href="https://play.google.com/store/apps/details?id=com.walkn.app.walkn"><img src="img/google-play-badge.png" alt="Get it on Google Play" width="564" height="168" /></a>
+  </header>
+  <nav class="sstrip" aria-label="Sections"></nav>
 
-<div class="header">
-  <div class="container">
-    <div class="header-logo">WALKn</div>
-    <div class="header-sub">Privacy Policy</div>
-  </div>
-</div>
-
-<div class="container">
-
-  <div class="meta">
-    <div>Effective date: September 19, 2026</div>
+  <main class="wrap">
+    <section class="intro">
+      <p class="eyebrow"><i class="ic" style="--c: var(--gold); --ico: url(img/pv_choices.svg)" aria-hidden="true"></i>Privacy</p>
+      <h1>Privacy Policy</h1>
+      <div class="meta"><div>Effective date: September 19, 2026</div>
     <div>Data controller: Ostracized Innovations (sole developer of WALKn)</div>
-    <div>Contact: <a href="mailto:ostracizedinnovations@gmail.com">ostracizedinnovations@gmail.com</a></div>
-  </div>
-
-  <div class="callout">
-    <h2>Your privacy choices</h2>
-    <p>If you are in the European Economic Area, the United Kingdom, or a US state with a privacy law, WALKn asks for your choices about ads and analytics the first time you open the app.</p>
+    <div>Contact: <a href="mailto:ostracizedinnovations@gmail.com">ostracizedinnovations@gmail.com</a></div></div>
+    </section>
+    <section class="row lead" id="your-privacy-choices">
+      <h2 class="row-h"><i class="ic" style="--ico: url(img/pv_choices.svg)" aria-hidden="true"></i>Your privacy choices</h2>
+      <div class="row-b">
+<p>If you are in the European Economic Area, the United Kingdom, or a US state with a privacy law, WALKn asks for your choices about ads and analytics the first time you open the app.</p>
     <p><strong>You can change that answer at any time</strong> in the app: <strong>Profile → Support → Ad privacy settings</strong>.</p>
     <p>If you decline, ads cannot be loaded — so the optional "watch an ad" rewards stop working. Nothing else changes: step tracking, your progress, leaderboards and every other feature work exactly the same either way.</p>
     <p>You can delete everything we hold at any time via <strong>Profile → Account → Delete Account</strong>.</p>
-  </div>
-
-  <div class="section">
-    <h2>What we collect</h2>
-
-    <div class="section-card">
-      <div class="section-icon">📍</div>
-      <div class="section-content">
-        <h3>Location &amp; movement</h3>
-        <p>GPS coordinates are used while your shoe is active to verify walking displacement and rule out vehicle movement. Raw coordinates are never stored on our servers or shared with third parties — only your displacement distance is retained.</p>
       </div>
-    </div>
+    </section>
+    <section class="row" id="what-we-collect">
+      <h2 class="row-h">What we collect</h2>
+      <div class="row-b">
+<div class="card"><h3><i class="ic" style="--ico: url(img/pv_location.svg)" aria-hidden="true"></i>Location &amp; movement</h3>
+        <p>GPS coordinates are used while your shoe is active to verify walking displacement and rule out vehicle movement. Raw coordinates are never stored on our servers or shared with third parties — only your displacement distance is retained.</p></div>
 
-    <div class="section-card">
-      <div class="section-icon">📱</div>
-      <div class="section-content">
-        <h3>Sensor data</h3>
-        <p>Accelerometer readings validate your walking gait as part of our anti-cheat system. This data is processed on-device in real time and is never stored or transmitted.</p>
-      </div>
-    </div>
+    <div class="card"><h3><i class="ic" style="--ico: url(img/pv_sensor.svg)" aria-hidden="true"></i>Sensor data</h3>
+        <p>Accelerometer readings validate your walking gait as part of our anti-cheat system. This data is processed on-device in real time and is never stored or transmitted.</p></div>
 
-    <div class="section-card">
-      <div class="section-icon">👟</div>
-      <div class="section-content">
-        <h3>Game progress &amp; activity</h3>
+    <div class="card"><h3><i class="ic" style="--ico: url(img/pv_walk.svg)" aria-hidden="true"></i>Game progress &amp; activity</h3>
         <p>Step counts, distance, estimated calories, daily history, streaks, goals, shoes, inventory, and Foot Prints currency are stored locally on your device and optionally synced to your personal Firebase account for backup and cross-device restore.</p>
-        <p>If you fill in the optional calorie profile, the height, weight, sex and age you enter are stored with your settings and used only to make the calorie estimate more accurate.</p>
-      </div>
-    </div>
+        <p>If you fill in the optional calorie profile, the height, weight, sex and age you enter are stored with your settings and used only to make the calorie estimate more accurate.</p></div>
 
-    <div class="section-card">
-      <div class="section-icon">🏆</div>
-      <div class="section-content">
-        <h3>Leaderboards (optional)</h3>
+    <div class="card"><h3><i class="ic" style="--ico: url(img/pv_trophy.svg)" aria-hidden="true"></i>Leaderboards (optional)</h3>
         <p>If you choose to link a Google account, we receive your display name, email address, and profile photo from Google Sign-In. Linking is optional and only required for leaderboard participation.</p>
-        <p>When you compete, the following becomes readable by other signed-in players: your display name and profile photo, your step counts for the current period, your streak length, your equipped shoe's appearance and condition, and any achievements you have chosen to feature. Your email address is never shown to other players.</p>
-      </div>
-    </div>
+        <p>When you compete, the following becomes readable by other signed-in players: your display name and profile photo, your step counts for the current period, your streak length, your equipped shoe's appearance and condition, and any achievements you have chosen to feature. Your email address is never shown to other players.</p></div>
 
-    <div class="section-card">
-      <div class="section-icon">📢</div>
-      <div class="section-content">
-        <h3>Ads</h3>
+    <div class="card"><h3><i class="ic" style="--ico: url(img/pv_ads.svg)" aria-hidden="true"></i>Ads</h3>
         <p>WALKn shows optional rewarded ads through Google AdMob. AdMob may collect your device's Advertising ID, IP address, and usage signals in order to serve and measure ads, and to limit how often you see the same one.</p>
         <p>Where consent is required, we ask before any ad is requested, and we do not request one until you have answered. If you allow it, ads may be personalised using the data Google holds. If you decline, no ad is requested at all.</p>
-        <p>See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses data from apps that use its services</a>.</p>
-      </div>
-    </div>
+        <p>See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses data from apps that use its services</a>.</p></div>
 
-    <div class="section-card">
-      <div class="section-icon">📊</div>
-      <div class="section-content">
-        <h3>Usage analytics</h3>
+    <div class="card"><h3><i class="ic" style="--ico: url(img/pv_analytics.svg)" aria-hidden="true"></i>Usage analytics</h3>
         <p>We use Google Analytics for Firebase to understand whether the app actually works after you install it — for example, whether you granted the location permission, and whether step and distance tracking ever started. These are counts of in-app events, not a record of your activity. Analytics also collects a randomly generated app-instance identifier, basic device information (model and OS version), and an approximate region derived from your IP address. We do not send your name, email address, or GPS coordinates to Analytics.</p>
-        <p>Where consent is required, analytics collection stays switched off unless you allow it.</p>
-      </div>
-    </div>
+        <p>Where consent is required, analytics collection stays switched off unless you allow it.</p></div>
 
-    <div class="section-card">
-      <div class="section-icon">🛠️</div>
-      <div class="section-content">
-        <h3>Crash &amp; error reports</h3>
+    <div class="card"><h3><i class="ic" style="--ico: url(img/pv_crash.svg)" aria-hidden="true"></i>Crash &amp; error reports</h3>
         <p>We use Firebase Crashlytics to record crashes and handled errors so they can be fixed. A report contains the error and its stack trace, your device model and OS version, a randomly generated installation identifier, and your WALKn user ID (the same random account identifier that appears on the leaderboards) so that a reported problem can be matched to the account it affected. It contains no location data, no name or email address, and nothing you have typed.</p>
-        <p>We rely on our legitimate interest in keeping the app working for this, so it is not covered by the consent choice above. If you would prefer we did not collect crash reports from your device, email us and we will tell you how to opt out.</p>
+        <p>We rely on our legitimate interest in keeping the app working for this, so it is not covered by the consent choice above. If you would prefer we did not collect crash reports from your device, email us and we will tell you how to opt out.</p></div>
+
+    <div class="card"><h3><i class="ic" style="--ico: url(img/pv_feedback.svg)" aria-hidden="true"></i>Feedback</h3>
+        <p>If you submit a bug report or suggestion through the app, we store the type you selected, the description you wrote, your user ID, and the time you sent it. We use this only to respond to and improve the app. If you instead use the "email a screenshot" option, the message goes to our email inbox rather than our database.</p></div>
       </div>
-    </div>
-
-    <div class="section-card">
-      <div class="section-icon">💬</div>
-      <div class="section-content">
-        <h3>Feedback</h3>
-        <p>If you submit a bug report or suggestion through the app, we store the type you selected, the description you wrote, your user ID, and the time you sent it. We use this only to respond to and improve the app. If you instead use the "email a screenshot" option, the message goes to our email inbox rather than our database.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <div class="section prose">
-    <h2>What we never collect</h2>
-    <ul>
+    </section>
+    <section class="row" id="what-we-never-collect">
+      <h2 class="row-h">What we never collect</h2>
+      <div class="row-b">
+<ul>
       <li>Your contacts, photos, files, calendar, microphone or camera.</li>
       <li>Raw GPS coordinates on our servers — only the distance you covered.</li>
       <li>Any medical or health-record information. WALKn measures activity (steps, distance, an estimated calorie figure); it is not a medical device and makes no health assessment.</li>
       <li>Payment details. WALKn has no purchases, so we never see a card.</li>
     </ul>
     <p>We do not sell your data, and we do not build advertising profiles ourselves.</p>
-  </div>
-
-  <div class="divider"></div>
-
-  <div class="section prose">
-    <h2>How we use your data</h2>
-    <ul>
+      </div>
+    </section>
+    <section class="row" id="how-we-use-your-data">
+      <h2 class="row-h">How we use your data</h2>
+      <div class="row-b">
+<ul>
       <li>To count and verify your steps during walks</li>
       <li>To detect cheating so leaderboards stay fair</li>
       <li>To maintain your game progress across devices</li>
@@ -296,13 +273,12 @@
       <li>To diagnose crashes and errors</li>
       <li>To read and respond to your feedback</li>
     </ul>
-  </div>
-
-  <div class="divider"></div>
-
-  <div class="section prose">
-    <h2>Legal bases (EEA &amp; UK)</h2>
-    <p>If you are in the EEA or the UK, we rely on the following legal bases under the GDPR:</p>
+      </div>
+    </section>
+    <section class="row" id="legal-bases-eea-and-uk">
+      <h2 class="row-h">Legal bases (EEA &amp; UK)</h2>
+      <div class="row-b">
+<p>If you are in the EEA or the UK, we rely on the following legal bases under the GDPR:</p>
     <table class="bases">
       <thead>
         <tr><th>Purpose</th><th>Legal basis</th></tr>
@@ -319,13 +295,12 @@
       </tbody>
     </table>
     <p>Where we rely on consent, you can withdraw it at any time — see <strong>Your privacy choices</strong> at the top of this page. Withdrawing consent does not affect anything done before you withdrew it.</p>
-  </div>
-
-  <div class="divider"></div>
-
-  <div class="section prose">
-    <h2>Third-party services</h2>
-    <p>WALKn relies on the following third-party services, each governed by their own privacy policies:</p>
+      </div>
+    </section>
+    <section class="row" id="third-party-services">
+      <h2 class="row-h">Third-party services</h2>
+      <div class="row-b">
+<p>WALKn relies on the following third-party services, each governed by their own privacy policies:</p>
     <ul>
       <li><strong>Firebase (Google)</strong> — Authentication, cloud data backup, and Firestore database.</li>
       <li><strong>Google Sign-In</strong> — Optional account linking for leaderboard participation.</li>
@@ -338,21 +313,19 @@
 
     <h3>International transfers</h3>
     <p>Because WALKn runs on Google's infrastructure, your data may be stored on or accessed from servers outside your country, including in the United States. Google provides the safeguards for these transfers — including the European Commission's Standard Contractual Clauses — as described in its own privacy documentation.</p>
-  </div>
-
-  <div class="divider"></div>
-
-  <div class="section prose">
-    <h2>Data retention</h2>
-    <p>Local data remains on your device until you uninstall the app or delete your account. Cloud-synced data — including your game state, daily history, leaderboard entries, player card and settings — is permanently deleted when you use <strong>Profile → Account → Delete Account</strong>. This action cannot be undone and there is no recovery period.</p>
+      </div>
+    </section>
+    <section class="row" id="data-retention">
+      <h2 class="row-h">Data retention</h2>
+      <div class="row-b">
+<p>Local data remains on your device until you uninstall the app or delete your account. Cloud-synced data — including your game state, daily history, leaderboard entries, player card and settings — is permanently deleted when you use <strong>Profile → Account → Delete Account</strong>. This action cannot be undone and there is no recovery period.</p>
     <p>Feedback you send us is kept for as long as it is useful for fixing the issue you reported, and no longer than two years. Crash reports are retained by Firebase Crashlytics for up to 90 days. Analytics data is retained for up to 14 months.</p>
-  </div>
-
-  <div class="divider"></div>
-
-  <div class="section prose">
-    <h2>Your rights</h2>
-    <p>These apply to everyone, wherever you live:</p>
+      </div>
+    </section>
+    <section class="row" id="your-rights">
+      <h2 class="row-h">Your rights</h2>
+      <div class="row-b">
+<p>These apply to everyone, wherever you live:</p>
     <ul>
       <li><strong>Delete your data</strong> — Remove all cloud data at any time via Profile → Account → Delete Account.</li>
       <li><strong>Change your privacy choices</strong> — Profile → Support → Ad privacy settings.</li>
@@ -376,28 +349,78 @@
     <h3>If you are in California or another US state with a privacy law</h3>
     <p>Depending on your state — including California, Colorado, Connecticut, Utah and Virginia — you may have the right to know what personal information we collect and why, to request a copy, to correct it, to delete it, to opt out of targeted advertising, and not to be discriminated against for exercising any of those rights.</p>
     <p><strong>We do not sell your personal information</strong>, and we never have. Allowing personalised ads may count as "sharing" for cross-context behavioural advertising, or as "targeted advertising", under some of these laws — declining the ads choice, or changing it later in Profile → Support → Ad privacy settings, opts you out. You can also delete everything via Profile → Account → Delete Account, or email us and we will handle any of the above.</p>
-  </div>
+      </div>
+    </section>
+    <section class="row" id="children-s-privacy">
+      <h2 class="row-h">Children's privacy</h2>
+      <div class="row-b">
+<p>WALKn is not directed at children. We do not knowingly collect personal information from children under 13, or under the applicable age of digital consent in your country — which is between 13 and 16 across the EEA. If you believe a child has provided us with personal information, please contact us and we will delete it.</p>
+      </div>
+    </section>
+    <section class="row" id="changes-to-this-policy">
+      <h2 class="row-h">Changes to this policy</h2>
+      <div class="row-b">
+<p>We may update this privacy policy from time to time. The effective date at the top of this page will reflect the most recent revision. If a change materially affects how we use your data, we will ask for your choices again in the app rather than relying on this page alone. Continued use of the app after changes are posted constitutes acceptance of the updated policy.</p>
+      </div>
+    </section>
+    <div class="contact"><img src="img/oi_mark.webp" alt="" width="531" height="379" /><div><div class="studio">OSTRACIZED INNOVATIONS</div>
+    <a href="mailto:ostracizedinnovations@gmail.com">ostracizedinnovations@gmail.com</a></div></div>
+  </main>
 
-  <div class="divider"></div>
+  <footer>
+    <div class="wrap">
+      <p class="foot-credit"><img src="img/oi_mark.webp" alt="" width="531" height="379" /><span>© 2026<b>Ostracized Innovations</b></span></p>
+    </div>
+  </footer>
 
-  <div class="section prose">
-    <h2>Children's privacy</h2>
-    <p>WALKn is not directed at children. We do not knowingly collect personal information from children under 13, or under the applicable age of digital consent in your country — which is between 13 and 16 across the EEA. If you believe a child has provided us with personal information, please contact us and we will delete it.</p>
-  </div>
-
-  <div class="divider"></div>
-
-  <div class="section prose">
-    <h2>Changes to this policy</h2>
-    <p>We may update this privacy policy from time to time. The effective date at the top of this page will reflect the most recent revision. If a change materially affects how we use your data, we will ask for your choices again in the app rather than relying on this page alone. Continued use of the app after changes are posted constitutes acceptance of the updated policy.</p>
-  </div>
-
-  <div class="contact-box">
-    <div class="studio">OSTRACIZED INNOVATIONS</div>
-    <a href="mailto:ostracizedinnovations@gmail.com">ostracizedinnovations@gmail.com</a>
-  </div>
-
-</div>
-
+  <script>
+    (function () {
+      var rows = [].slice.call(document.querySelectorAll('.row'));
+      if (!('IntersectionObserver' in window)) { rows.forEach(function (r) { r.classList.add('in'); }); return; }
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { rootMargin: '0px 0px -8% 0px' });
+      rows.forEach(function (r) { io.observe(r); });
+      var t = location.hash && document.getElementById(location.hash.slice(1)); if (t) t.classList.add('in');
+    })();
+  </script>
+  <script>
+    /* 16.13 · the sections, named once in the pinned strip; and the frames' touches, each a wrap around words already
+       there - nothing added, nothing removed (the page reads the same with no script) */
+    (function () {
+      var rows = [].slice.call(document.querySelectorAll('main .row')), strip = document.querySelector('.sstrip');
+      rows.forEach(function (r) {
+        var name = r.querySelector('.row-h').textContent.trim();
+        var b = document.createElement('button'); b.type = 'button'; b.textContent = name; b.dataset.id = r.id;
+        b.addEventListener('click', function () { r.classList.add('in'); r.scrollIntoView({ behavior: 'smooth', block: 'start' }); history.replaceState(null, '', '#' + r.id); });
+        strip.appendChild(b);
+      });
+      function spy() {
+        var line = strip.getBoundingClientRect().bottom + 30, cur = null;
+        rows.forEach(function (r) { if (r.getBoundingClientRect().top <= line) cur = r; });
+        if (innerHeight + scrollY >= document.documentElement.scrollHeight - 2) cur = rows[rows.length - 1];
+        [].forEach.call(strip.children, function (b) {
+          var on = !!cur && b.dataset.id === cur.id;
+          if (on && !b.classList.contains('on') && strip.scrollWidth > strip.clientWidth) strip.scrollTo({ left: b.offsetLeft - (strip.clientWidth - b.offsetWidth) / 2, behavior: 'smooth' });
+          b.classList.toggle('on', on);
+        });
+      }
+      addEventListener('scroll', spy, { passive: true }); addEventListener('resize', spy); spy();
+      (function () {
+        var PATH = /Profile(?: tab)?(?:\s*→\s*[^→.,<]+?)+(?=[.,<]|$)/g;
+        [].forEach.call(document.querySelectorAll('main .row-b p, main .row-b li'), function (e) {
+          if (e.closest('.path')) return;
+          e.innerHTML = e.innerHTML.replace(PATH, function (m) { return '<span class="lg-path">' + m + '</span>'; });
+        });
+        [].forEach.call(document.querySelectorAll('main .row-b p'), function (p) {
+          if (/^\s*We do not sell your data/.test(p.textContent)) p.innerHTML = '<span class="lit">' + p.innerHTML + '</span>';
+          var st = p.querySelector('strong'); if (st && /^We do not sell/.test(st.textContent)) st.classList.add('lit');
+        });
+        [].forEach.call(document.querySelectorAll('table.bases tbody td:last-child'), function (td) {
+          var m = td.innerHTML.match(/^(Performance of a contract|Legitimate interests|Consent)/); if (!m) return;
+          var k = m[1] === 'Consent' ? 'consent' : m[1] === 'Legitimate interests' ? 'legit' : 'contract';
+          td.innerHTML = '<span class="k ' + k + '">' + m[1] + '</span>' + td.innerHTML.slice(m[1].length);
+        });
+      })();
+    })();
+  </script>
 </body>
 </html>

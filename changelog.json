@@ -1,0 +1,501 @@
+{
+  "latest": "2.3.0",
+  "releases": [
+    {
+      "version": "2.3.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Upgrading lets you pick a new look, from Common up to the tier it lands at. It is worn only if the upgrade succeeds.",
+            "SAME TIER upgrades reroll an item's stats at better odds without changing its tier, and Legendary items can now be upgraded.",
+            "Two new charms: Baby Raccoon and Moose."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "Every upgrade try also costs some of the item's crafting material, and the odds are lower in both modes.",
+            "The Luck of the shoe that earned a crate can add an item to it, up to that crate's maximum.",
+            "Higher-rarity finds are likelier to be Blueprints: 9% at Common up to 22% at Legendary.",
+            "Locked colors, prints and finishes say what they need.",
+            "Smoother scrolling on Home, the Player Card and Leaders, and a close key on the Leaders shoe pop-out."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Long names and Tailor labels now fit at large text sizes."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "2.2.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "37 shoe prints and 22 lace prints to learn and craft, 5 of them two-color Legendary lace prints.",
+            "New finishes for shoes, laces and charms, including Glitter, Enamel, Rose Gold and Glow, made just for charms.",
+            "Crafting a shoe: every zone can take its own print and finish, as it takes its own color.",
+            "Tap any stat on the back of your shoe for its own card: what it does and this shoe's figure.",
+            "Tap a shoe on the Leaders podium to lift it to full size, with the walker's player card one tap away."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "Crates hold fewer items and smaller material stacks, so crafting takes longer.",
+            "Your streak bonus shows on the daily goal's reward, the only reward it adds to.",
+            "New blueprints say which and where: gold dots in the Library and the bag, and a note when you find one.",
+            "LEARN ALL scans and stamps each blueprint in turn; a learned blueprint's note stays up for 3 seconds.",
+            "Tap a learned Library tile for its name, tier and which crafts can use it.",
+            "A new crate unlock card and Profile header, a shorter tutorial, and a coin on the route while a shoe levels up.",
+            "Charm outlines are darker, so each charm reads clearly under any finish.",
+            "The Tailor shows what a craft can use, with prints and finishes grouped by rarity."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Picking your phone up a few times without walking could add steps.",
+            "On the Glide, Jogger and Trail shoes a lace print showed on only part of the lace.",
+            "The bottom of the shoe's stat side was cut off on smaller phones.",
+            "Long print and finish names were cut off in the Tailor."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "2.1.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Gem upgrades: in the Tailor, put one Uncommon gem in for a Rare or one Rare for a Legendary. A hit makes the new gem; a miss destroys the one you put in.",
+            "128 crafting colors to collect for every item type, up from 32. Colors you have not found yet show which crates drop them.",
+            "A notification the day before an update deadline, and another at it, so an update never catches you out."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "Crafting costs more materials, and scrapping an item returns half of them (plus its gem).",
+            "The Tailor starts with nothing picked, the item fills in as you choose its look, and laces skip the Model step.",
+            "Shoes in the Tailor have the same light outline as in your inventory."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Charms show in the Tailor: on the upgrade list and bench, the craft preview and the work order.",
+            "The Goals page no longer scrolls down on its own.",
+            "The update deadline shows your own local time and date."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "2.0.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Crafting: build every shoe, lace and charm in the Tailor from materials, learned blueprints and Rarity Gems, as one timed job; each ad cuts part of the wait. You start with blueprints for every look you already own.",
+            "Upgrade any item a tier with a Rarity Gem, keeping its look, level and sockets. Each climb adds +8% to all of its stats for good, and a chevron on its rarity bar.",
+            "Crates hold the ingredients now: Repair Kits, materials, Crate Keys, blueprints and Rarity Gems. Your Luck picks each crate's tier; how often crates drop is unchanged.",
+            "Scrap any item you don't need for its materials and a gem of its rarity; any look on it you haven't learned comes back as a blueprint.",
+            "A redesigned Goals page: your goal on a dial, a recommended goal in one tap, what hitting it pays, your pace, your streak and the full streak ladder, with every rule in one HOW IT WORKS sheet.",
+            "TAILOR is back on the nav bar (CRAFT, UPGRADE, LIBRARY), and a WAITING FOR YOU bar on Home shows what's ready to collect or claim."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "A 30-day streak crate earned while your crate slots are full now waits until midnight and drops in the moment you free a slot.",
+            "Named streak milestones past day 60 (Eternal II, III and MAX) with their own colors, and a livelier streak bolt.",
+            "Leaders and the Tailor scroll and animate more smoothly; the podium shows full names."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.74.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "A new Leaders page: the top three stand on a medal podium under spotlights, with their shoes on the blocks and their names, totals and prizes on nameplates. Switch between STEPS and STREAK at the top, beside the reset clock.",
+            "Your card on the Leaders page shows your place, what it pays and how far you are from passing the walker ahead, and warns you before a damaged shoe freezes your rank, with a REPAIR button that takes you Home.",
+            "The Leaders table lists only the places that get paid, the streak board shows its top 20, and HOW IT WORKS explains the floors, payouts, damage and streaks in one sheet. Scroll past your card and a bar keeps your rank in view.",
+            "Tailor a shoe keeping its color, its print and its finish separately (a metallic color brings its own finish, free). Shoes you already own look exactly the same.",
+            "A TAILOR button on every rarity tier in your inventory opens the Tailor showing just that tier."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "The lace Tailor's sewing machine feeds its cords in as the new lace grows, and a failed weave snaps at the stitch it was on.",
+            "Player card: the rank line under your name is gone; your badge's title sits there when you show one."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.73.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "The Tailor is rebuilt around locks: on every run you choose exactly what to keep from your Base (a lace's color, print, finish or stat; a charm's figure, color, finish or stats; a shoe's model or look) and everything else rerolls at the new tier. Keeping nothing is the cheapest run with the best odds; each thing you keep adds a little cost and takes a little off the odds.",
+            "The Tailor now opens from your inventory: tap or long-press a lace, charm or shoe and choose Tailor (double-tap still equips). The TAILOR button is gone from the menu bar.",
+            "A Tailor win lights up in the new item's rarity color, and COLLECT puts the new item at the top of your inventory, tagged NEW.",
+            "A badge you display now puts its title under your name and its coin on your shared player card."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "A Walk Boost pass opens its crate spot for the whole day: 5 crates with your first pass, 6 with your second, and the spot stays open after the pass runs out.",
+            "Past 12,000 steps in a day, Luck sets the crate pace on Uncommon shoes and up. Steps on a Walk Boost pass are never slowed.",
+            "Home moved to the far left of the menu bar: Home, Inventory, Leaders, Profile.",
+            "The lace and charm slots on Home are redesigned, and dark shoes now have a soft light edge so they don't disappear on dark cards.",
+            "Neon Legendary shoes get a white midsole, including the ones you already own.",
+            "Smoother inventory scrolling.",
+            "Keys and Repair Kits show how many you have in their top bar, and the inventory sort TAILORED replaces RECENT.",
+            "The crate reveal builds up faster, and the Book charm is drawn smaller on the shoe."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "A stray dot under items in the inventory, the Tailor, the lace and charm slots and the crate reveal.",
+            "The crate jumped up the moment the stage finished lighting it.",
+            "An ALPHA TESTER's shared player card overflowed its frame by a pixel."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.72.1",
+      "sections": [
+        {
+          "heading": "Improved",
+          "lines": [
+            "Home is smoother whether you're scrolling or not: the glow and floor reflection under your shoe are now drawn once and re-used, instead of the whole shoe being drawn three times on every frame.",
+            "Scrolling near the top of Home is smoother, and the top bar keeps its color when you scroll away from the top.",
+            "The crate on the opening screen now floats up and down while it waits."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "The dashboard's animations - the goal fireworks, the shoe card, the progress deck and the top-bar icons - froze a few seconds after the phone sat still. They keep playing now.",
+            "Sharing a card could send an older card you had shared before instead of the one in the preview.",
+            "A badge you put on your card took minutes to show on your leaderboard picture; it now shows at once.",
+            "The crate jumped up a little as the spotlight revealed it.",
+            "A day of step history that failed to back up could be lost if the app was closed before the retry. A failed backup now makes the next launch re-send your whole history."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.72.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Luck has a finish line: max out your shoe's Luck (your Luck charm counts) on an Uncommon shoe or better and all 6 of the day's crate spots open without watching an ad. The stat face counts down to it, and a Luck bar under your crates shows how far along you are.",
+            "A crate you find after your day's spots are full is no longer lost: it waits in the vault until midnight. Tap its padlock and watch an ad - one ad per crate - and the vault door swings open to hand it over. With the app closed you get one notification that day (Notifications › Rewards › Crate Waiting)."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "Home, crate opening and the Tailor's weave run smoother: animations settle a few seconds after the last thing changes instead of running forever, and the soft glows and shadows are drawn once and re-used.",
+            "On a player card the picture is bigger and the badge easier to make out, and the Alpha Tester's gold frame now sparkles around your picture on the leaderboard too.",
+            "When ads stop being available WALKn waits before asking again instead of retrying on every tap.",
+            "A badge you put on your card, and the rest of your shared card, now reach other players' leaderboard cards straight away.",
+            "Your exact version and build are shown at the bottom of Support - tap to copy."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "The crate counter said 4/4 after you had earned 5 or 6 crates on your passes, and the gold pass slots kept inviting an ad after both passes were used.",
+            "White patches around the chain and crown of the Alpha Tester watch.",
+            "The Luck explanation (the ? by Luck) was out of date about points past the cap."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.71.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Invite a walker: Profile › ACCOUNT now carries your invite code, a share button and a board of everyone who used it. A walker who redeems your code and walks their first 1,000 verified steps gets a welcome package - a Welcome Key that opens their first crate on the spot, a key and a repair kit at their shoe's rarity, and 200 Foot Prints - and you claim a crate at your own shoe's rarity from their row.",
+            "Badges: a new BADGES tab on your profile. The WALKn Influencer ladder runs six coins from 20 to 1,000 successful referrals; claim one you have earned and set it to show on your player card, where it replaces the rank line for you and for anyone who opens your card. The DIRECTOR coin pays +10% Foot Prints while it is the one on your card.",
+            "The ALPHA TESTER badge: granted, never earned - a pocket-watch coin for the walkers who tested WALKn in its very early years, with a feathered gold frame around your picture everywhere it shows while you wear it.",
+            "Charms are redrawn far larger and hang from one real chain, each from its own attachment point, in shaded enamel - and the charm on your shoe swings from its clip while you are walking. A twelfth charm joins the pool: the Baby Porcupine.",
+            "The Tailor: a Common run is now FREE (the two Materials are the price), and above Common the Foot Prints are a token - 100 / 300 / 900. A rewarded ad adds +5 points to this run's odds. The ledger gained an IT ROLLS row that says exactly what a win rolls, and a tailored item now wears a crimson scissors end-plate on its rarity band, shoes included.",
+            "The day's crates are a cap meter: 4 a day, and each Walk Boost pass you walk opens one more spot - 5 on the first, 6 on the second. The slots only a pass can still fill wear a dashed gold frame.",
+            "A PACE tag beside the Daily Goal card's nameplate carries the Goals tab's goal-vs-pace verdict; tap it to open Profile › Goals at the Integrity section.",
+            "The support form asks whether it is about the phone or the watch first, so a watch bug never has to be guessed from a phone-shaped report."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "Luck now matters across your shoe's whole Luck band, and a Luck charm or Luck points past the cap raise crate volume at every rarity instead of only Legendary. A mid-roll shoe earns exactly what it did.",
+            "Every share card is a dark rimmed plate now: an achievement shares its own badge with its place on the Trail, a leaderboard win shares every placement it won rather than the first, and your player card shares your shoe exactly as the home screen draws it.",
+            "No wait between ad views - the five-minute cooldown is gone. The daily view caps are unchanged.",
+            "Opening and closing the Tailor is one smooth motion: the bars slide off and back on the page's own clock, and closing is a real slide down instead of a hard cut.",
+            "Home runs lighter: the hero's embers, the Deck's route lights and the goal-cleared burst and fireworks are drawn as sprites instead of blurring a shape per frame. Same look.",
+            "Crate opening no longer twitches after the spotlight settles, and the dashboard behind the sheet is taken offstage for the rest of the open."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "The Boost Passes card's WHILE ON A PASS EARN line and its buffs drew at about two thirds size on every phone since 1.70.0.",
+            "Crate reveal cards no longer carry the gold NEW tag; the BONUS tag on a Lucky Find stays."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.70.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "A watch indicator on the steps bar, at the far left of STEPS TODAY: INSTALL when your paired Wear OS watch does not have WALKn yet, UPDATE when a newer watch build is out, SYNCED when it is on a reachable watch, a pulsing crimson ! when the watch is out of reach. Tap it to install or update WALKn on the watch from the phone (you finish on the wrist), or to see how to add its tiles.",
+            "Your first crate's band follows the crate: UNLOCK, UNLOCKING with the live countdown, then OPEN - until you open it.",
+            "A locked crate you cannot yet afford wears a gold FREE coin while today's free ad unlock is available; a ready crate reads OPEN."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.69.0",
+      "sections": [
+        {
+          "heading": "Improved",
+          "lines": [
+            "Crate haptics you can feel, on the beats: a tap on every rock of the crate as it builds up, growing stronger and faster with the rocking, a crack and a thud when the lock snaps, a click as it drops away, and a rising buzz into the explosion with a full-strength thud on it.",
+            "The light around an opened crate drifts slowly about the crate instead of jittering back and forth.",
+            "Lace and charm plates under the shoe: bigger art, the stats at the right.",
+            "The update notice arrives within seconds of a release and stays until you update."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Crate opening runs smoother: every spark, ember, glint and light disc is a sprite now and the reward cards are cached - nothing looks different.",
+            "Smoother scrolling on the Home screen, and a lighter crate screen.",
+            "The OPEN CRATE button sits above the Android navigation bar.",
+            "Opening the Tailor no longer zooms the deck; it slides up at its final size.",
+            "The lace Tailor's card edge matches the charm and shoe decks.",
+            "The update-available card and the first-crate counter match the other Home cards' width."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.68.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Opening a crate is a new screen: a spotlight comes on over your crate with what it holds and the odds above it; tap and the lid blows off, and each reward rises out of the box as a card, one at a time.",
+            "Boost Passes: each free ad is a 3,000-step pass that fills gold when banked and drains as you walk. Same steps, same stacking, same daily count.",
+            "The Path Ahead is a ridge map of your shoe's milestones, with a NEXT STOP card and the Mastery block beneath."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "Durability and Experience Gain now keep paying past their rarity cap, one band deep, and every over-cap band pays more the deeper you go.",
+            "A new shoe's four stats share one budget, so every drop has a shape to build on.",
+            "Spending a stat point shows what that point buys at your own pace.",
+            "The Tailor fills the whole screen; the inventory's trade bar reads EXCHANGE."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Standing up after sitting no longer throws away the first few seconds of walking.",
+            "The status pill leaves Unusual motion the moment the engine does."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.67.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Your first session counts down STEPS TO YOUR FIRST CRATE under the top bar, and the shoe walkthrough now opens as a pop-up over the shoe at your first stat point.",
+            "Not linked to Google? The daily board now shows a \"You, today\" row at the rank your steps would take, with LINK TO CLAIM on the row.",
+            "Update notices moved to a home-screen band that installs the update in place, with one RESTART tap at the end.",
+            "The inventory is rebuilt as the Rack, with sort by stat; the Tailor and its picker are rebuilt to match."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "The shoe wear-out warning now reaches you with the app closed, about 2 km before damage starts cutting your earnings.",
+            "Picking the phone up while idle no longer counts steps.",
+            "A worn-out shoe no longer gains XP.",
+            "Rate WALKN now opens WALKn's page on Google Play, where the stars are."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.66.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Your shoe's stats live on the shoe. Tap it on its card and the stage turns over to a star map: one star per stat, and the shape between them is your build. Every figure is per kilometer or mile - Foot Prints per KM, XP per KM, KM until penalties start - and Luck reads as how far you walk between crates. Points are spent from the same face, and the ? opens one sheet that explains all four stats and the lace's cost reductions.",
+            "Double your daily goal reward. The moment the goal clears, a bar under the goal card offers one ad to be paid the goal's Foot Prints a second time. One offer a day.",
+            "A fourth shoe, the Athletic Glide - the first silhouette in the game that is not a mid-height low-top runner."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "The equipped shoe's card is a lit stage under a bolted title bar carrying rarity, level and mastery, with the lace and charm as plates at its foot. The experience and damage/repair cards are one dark instrument welded under it: a night route with a headlamp on your walker, a thermal damage tube with pins at the 70% and 85% lines, and the repair bench at its foot. Together they are about 160 dp shorter than what they replace.",
+            "The Walking Boost is a bank: one gauge that fills gold as you bank steps and grays out as you walk them, with every figure in steps. Both daily boosts can be banked in one sitting.",
+            "A new first-time walkthrough: a slim band under the header coaches you through your own taps - flip the shoe, read the shape, then open each stat's ? - instead of dimming the screen. Nothing is blocked while it is up.",
+            "Your watch keeps up with all three step leaderboards and the streak board on its own while the app is closed.",
+            "The weekly and monthly leaderboards open faster and cost less to load.",
+            "Laces are redrawn as a shaded braided cord with metal tips, and charms are shaded like metal."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Leaderboard places are judged on the score the board actually holds for you - the same one every other player is compared to. Before this two players could be granted the same place on one board, a finished board could keep a lower score than you walked, and a placing could be counted against players who had not qualified.",
+            "A leaderboard prize can no longer be marked as paid before it is paid, the prize screen can no longer be backed out of without collecting, and when a finished board pays nothing the app records why.",
+            "Your streak can no longer be published as 0 on a slow start, the streak board's tiebreak uses your real streak start, and a shoe at 100% damage is frozen on every board, not only the daily one.",
+            "Pacing on the spot under open sky, shaking the phone in a fast rhythm, changing the phone's clock, a spoofed location, and a weak GPS fix no longer earn steps or distance.",
+            "A resting phone could add steps you never took: picking it up after it had been still counted once you had walked at all that day.",
+            "Restoring from the cloud no longer wipes today's crate progress, a day's history is no longer lost when its backup fails to send, and your cloud backup can no longer be overwritten with a blank one.",
+            "A double-tap on a Watch Ad button can no longer play a second ad that pays nothing, and the first ad of a session no longer waits on a cold load.",
+            "The dashboard could sit on its loading spinner at startup and never come back."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.65.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "A fourth shoe, the Athletic Glide. Its midsole is cut into an arcade of pill-shaped holes with a scalloped sole underneath — the first shoe in the game that is not a mid-height low-top runner.",
+            "The Walk Boost is spent in 3,000 steps instead of an hour, and it lives on the daily goal card rather than on a card of its own. It used to ask for an hour-long commitment at the moment you opened the app to check your progress, and it could be burned standing still. It also says what it gives you now: +50% Foot Prints, +50% crate drop chance and double shoe XP."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "Laces are redrawn. Every lace in the game is one picture recoloured, and that picture was flat line art with a plain white middle — so the color came through unshaded and a pattern had nothing to sit on. It is now a shaded braided cord with metal tips.",
+            "Charms are recoloured. Their color used to get MORE intense the brighter the artwork got, which is backwards for metal: every rarity ended up sharing the same gray shadow, more than half of each charm was one flat block of color, and there was no highlight anywhere. They now hold their color in shadow and catch a near-white shine at the top.",
+            "The lace and charm sockets on the shoe card are bigger, and the lace's pattern is finally legible on the shoe you are wearing — at the old size it was too small to see at all.",
+            "The Athletic Trail and the rugged shoe keep their shapes but gain toe perforations, visible mesh and crisper panel edges.",
+            "Your goal's warnings are one bar on the goal card instead of up to six separate cards stacked under it. Each used to have its own shape, color and buttons; there is now a single channel cut into the card with a lit lamp on it, so how serious it is reads before any word does.",
+            "The Goals tab lost about a third of a screen of empty space. The step goal number sat inside a fixed box that existed only to carry a glow behind it, and everything below started that much further down.",
+            "The card you see before you set a daily goal is no longer a plain white box that read like an error. It is the same instrument the goal card is — which matters, because the goal is opt-in and this is the first thing a new player sees."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Picking your phone up after it had been sitting still could add a few steps you never took. There is a safeguard for exactly that — nothing indoors counts until the app has seen 25 real walking steps first — but a change last week made it remember that proof for as long as tracking was running, which for a background step counter is most of the day. So once you had walked at all, handling the phone counted. It now forgets the proof after five minutes without a step: far longer than any pause in a real walk, far shorter than putting the phone down.",
+            "Restoring an account could quietly bring back only part of your step history. The restore wrote each day separately, so anything else reading your history at the same moment could interrupt it partway through. One unreadable day no longer costs the rest.",
+            "The shoe you are wearing can no longer be taken off by accident. Double-tapping the tile in your bag — the obvious thing to do to look at a shoe — unequipped it with no confirmation, and an empty shoe slot switches the whole game off: no Foot Prints, no XP, no wear, no crates, no achievements, and nothing on screen saying so. Equipping another shoe already swaps them over, so there was never a reason to take one off.",
+            "The dashboard could sit on its loading spinner at startup and never come back.",
+            "Lace patterns were effectively invisible on many Rare and Legendary laces. The pattern's ink shifts toward the lace's own accent color as rarity rises, and at Legendary there was nothing left to keep it dark — so whenever that accent landed near the lace's color, the pattern disappeared. Common and Uncommon are unchanged.",
+            "The chevron lace pattern was not drawing chevrons. Its bands were skewed so far that the arrowhead wrapped around itself and came out as jagged spikes.",
+            "A lace you just won showed no pattern on the card that reveals it — so it looked plain when you won it and patterned a second later in your bag.",
+            "A charm went flat the moment you equipped it. On the shoe it was drawn without the depth and metal finish it has everywhere else, so a Legendary charm looked like a sticker beside the identical charm in your bag.",
+            "Another player's woven shoe showed the wrong colors on their player card. Weaving a shoe keeps its old look, but the leaderboard was publishing its new identity instead — so everyone except its owner saw a shoe the owner had never seen.",
+            "A worn-out shoe now shows as frozen on the leaderboard. At 0% condition you are correctly taken off the board, but your row still read full health, so instead of the lock and a prompt to repair you were told you had not walked far enough to qualify.",
+            "\"Walkers out today\" counted phones that never went anywhere. It needed 20 steps and nothing else, so a device whose location never started — which records steps perfectly well while standing still — was counted as somebody out walking.",
+            "A worn-out shoe says everything that stopped, once. At 100% damage the card said your rank was frozen twice over in two places, and neither line mentioned that crate drops had stopped too. It also no longer claims anything about a leaderboard rank if you have never linked an account.",
+            "Stray specks of lace-colored pixels scattered across the Athletic Jogger."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.62.0",
+      "sections": [
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Walking in short bursts now counts. If you move around a house or an office a few steps at a time rather than taking one long walk, the app was throwing most of those steps away — and for a stop-start pattern, all of them. Four separate rules had to line up for this, each reasonable on its own: standing still threw away the steps you had just taken, the app made you re-prove you were walking every five minutes, and the first step after any pause was rejected outright. All four are fixed.",
+            "The step counter and the walking detector now agree on what walking is. The counter refused anything slower than about 50 steps a minute while the detector is happy down to 42, so it was discarding steps the rest of the engine would have vouched for.",
+            "Earning no longer stops while the app is closed. GPS switches off to save battery once you have been still, and for anyone walking in short bursts it could never switch back on — which quietly stopped Foot Prints, XP, shoe wear and achievements, because all of them are based on distance. Taking a few steps now brings it back, and opening the app always does.",
+            "A brief oddity in your gait mid-walk — handling your phone, a bag on one shoulder — no longer costs you the steps banked up to that point. They were being kept, then quietly discarded when you stopped, because nothing could ever credit them afterwards.",
+            "A finished day can no longer be overwritten by the next day's steps. This destroyed a real four-day streak: one bad record made a comfortably met goal read as a miss.",
+            "Your streak shows correctly on the streak leaderboard. It could sit at zero while the app held a real streak, which put you under the three-day minimum and off the board entirely.",
+            "Your streak now keeps up to date on the leaderboard while the app is closed. It used to change only when you opened the app, so for anyone who walks with the app shut it stayed at whatever it was on their last visit."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "Crate loot no longer clumps. Which item a crate pays is now spread out the same way crate drops themselves already were, so two people who open the same number of crates end up with a similar haul instead of one getting six shoes and the other one. How often each item drops has not changed at all — it is just far less streaky.",
+            "Better shoes come around eventually. If you have gone a long stretch with no shoe better than the one you already have, the chance of the next one landing a tier up slowly creeps in. It is invisible if your luck is ordinary, there is never a point where a better shoe is guaranteed, and the shoe drop rate itself is unchanged. The first step up the ladder comes soonest, since that is the one everybody is waiting on.",
+            "The Foot Prints counter shows what shoe mastery is adding to your earnings, beside the streak badge.",
+            "The leaderboard rows below the top three are redesigned to match the rest of the app.",
+            "The rating ask can now come a second time, at your first major achievement milestone, and says what its button actually does — so a prompt Google declines to show no longer looks like the app doing nothing."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.61.0",
+      "sections": [
+        {
+          "heading": "Improved",
+          "lines": [
+            "Lace patterns are redesigned and now actually read on the shoe. They used to be painted across the picture and clipped to the lace's outline, so a stripe cut through the criss-cross at whatever angle it happened to hit — one loop colored, the next not. They are measured along and across the lace itself now, so a stripe wraps the strand and a racing stripe runs down its center. Ten designs, with rarer laces carrying the more elaborate ones in bolder color.",
+            "Shoes drop twice as often from crates, 5% to 10%. The five points come off Repair Kits; Laces, Crate Keys and Charms are unchanged, and the shoe is still the rarest thing a crate can pay.",
+            "Leaderboard days, weeks and months end two hours earlier, at 07:00 UTC. The old reset was chosen when almost every player was in North America; three quarters are now elsewhere, and it was cutting their day in half — in Japan the board rolled over at 6pm, mid evening walk. It is still the middle of the night across the continental US.",
+            "A failed weave now blows the two spent Material recesses out of the Tailor deck, with the Base's SAFE latch lit beside it, and a successful weave is struck with a flare of light.",
+            "The shoe experience trail reads differently once a shoe is past its rarity cap: the walked route is solid gold, and a gold chip states what mastery is paying you. It had never mentioned mastery's reward at all.",
+            "Mastery level-ups are far faster, and no longer all the same length. Past about mastery 20 every single level took exactly 24 hours — the timer had hit a ceiling and stopped saying anything about the shoe. Each level now eases toward a limit set by rarity (2 hours on a Common, 3 on an Uncommon, 5 on a Rare, 8 on a Legendary) and changes at every level, so in practice almost every mastery level-up is much quicker than it was.",
+            "Level-ups no longer speed up when a shoe hits max level. The last ordinary level-up and the first mastery one could be nearly three times apart, so reaching the cap made progress suddenly faster — and on a Legendary the ordinary ladder ran past the mastery limit entirely. The two now meet exactly, which also makes ordinary level-ups considerably quicker at the higher rarities.",
+            "Mastery now costs something to keep up. Repairs and level-ups both get more expensive the deeper a shoe masters, and repairs take a little longer, at a rate set per rarity: a Common gives back about 60% of mastery's Foot Prints bonus in upkeep, a Legendary only 20%. Mastery stays clearly worth it at every rarity, and the deeper you go the better it gets."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Steps could silently stop being counted for hours. If the phone's motion sensor stream died mid-session nothing noticed and nothing restarted it — the tracking notification stayed up, the leaderboard kept updating on schedule, and the step count sat frozen until you next opened the app. It is now watched and reconnected on its own.",
+            "The dashboard stuttered while walking. Every previous attempt at this had scoped the individual cards, and all of them were being bypassed: the screen as a whole still rebuilt several times a second, which rebuilt every card underneath it regardless.",
+            "The streak bolt beside your daily goal was redrawing the whole goal card — its glow, ember field and the large step numeral — sixty times a second, for anyone with a streak of three days or more.",
+            "The goal screens quoted three different percentages for a trimmed reward, none of them the same quantity and two close enough to read as one number reported inconsistently. Every surface now quotes the same pair of real Foot Prints figures: what you earn now, and what you would earn at the recommended goal.",
+            "The Goals tab told you to raise your goal to earn LESS than you already were — the figure it offered as the \"full\" amount left your streak bonus out entirely.",
+            "The \"Lower Your Goal?\" warning always claimed a lowered goal would halve your streak reward. It was showing an internal scaling factor, which is the same number in every situation the warning can appear, so the figure was identical for every player and every streak. It now shows the real loss, and hides the row when there is none.",
+            "An equipped lace showed a different pattern on the shoe than on its own inventory card — a lace that looked plain in the bag could come out speckled on the foot. The shoe and the card rolled separately; one roll now serves both.",
+            "In the Tailor: the charms tab draws its TRY AGAIN / COLLECT plate again, a gold ring no longer sits frozen behind a shoe you just won, and the two spent Material shoes vanish completely on a loss. The whole page also fits the window now, at every phase.",
+            "Crates paying two or three rewards now show the same card as a crate paying one, just scaled to fit. They used to use an older, smaller card with a dark metal frame — so a Rare or Legendary crate, which always pays more than one, looked like it came from a different game. Three rewards sit two to a row rather than shrinking to a third of the screen.",
+            "A shoe at its maximum level no longer promises a level it can never reach. Past the cap every further level-up is a Mastery level, but the level-up card kept counting from the level number — so a maxed Legendary read \"LV 51\" against a maximum of 50, three lines below a header already saying MASTERY. It now counts Mastery, and the experience map follows it.",
+            "Equipping a charm can no longer stop you spending points into Luck before the stat has reached its own cap. A Common shoe wearing a high-roll Luck charm could lose the \"+\" one point short of its cap, even though that point still improved crate odds. Points are always spendable up to the cap, and the charm pushes past it as intended.",
+            "Luck invested past a Legendary shoe's cap no longer earns crates far faster than that shoe can open them. A fully invested Legendary was earning three times what its 72-hour unlock timer could get through, so most of the reward for a year of mastery was destroyed unopened. It still earns well past what the timer alone allows — a crate ad or two a day closes the gap — and over-cap Luck remains by far the biggest pay-off for over-investing. No shoe below its cap is affected, at any rarity."
+          ]
+        }
+      ]
+    }
+  ]
+}

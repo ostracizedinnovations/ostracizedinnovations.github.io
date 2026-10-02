@@ -1,6 +1,36 @@
 {
-  "latest": "2.4.0",
+  "latest": "2.5.0",
   "releases": [
+    {
+      "version": "2.5.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Lighter days: if you always walk less on one day of the week, that day now asks 85% of what you usually walk on it, never more than your goal. The Home card names the day and says why, and a Lighter Days notification tells you when your week changes. Every other day asks your full goal.",
+            "The inventory is redesigned: a category dock down the left, rarity shelves that stay pinned while you scroll, and a strip on every card saying what it's doing (ON FOOT, EQUIPPED, REPAIRING, LEVELING UP, LOCKED).",
+            "Leaders › How it works shows exactly what every place pays on the Daily, Weekly and Monthly boards."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "Crates now drop Shoe Material most often: Shoe 20%, Lace 17%, Charm 14%.",
+            "Home scrolls more smoothly, especially dragging slowly up and down.",
+            "With your phone's text size turned up, the Home goal card and the Leaders page no longer overlap or cut off, and Leaders names wrap between words.",
+            "Goal Reached names your goal instead of the steps you'd walked, and goal notifications show numbers with commas.",
+            "A full bag says what it costs before it happens: the Tailor holds new shoes, laces and charms until you make room; new keys and kits from crates are lost. Empty Shoes, Laces and Charms tabs point you to the Tailor."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "If your bag was too full to keep something from a crate, you're now told when you close the crate. Before, it showed in the reveal and quietly wasn't kept.",
+            "The old FORGED mark is gone from shoes everywhere."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.4.0",
       "sections": [

@@ -1,6 +1,36 @@
 {
-  "latest": "2.5.0",
+  "latest": "2.6.0",
   "releases": [
+    {
+      "version": "2.6.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Crafting can now fail: a craft lands 70% of the time at Common, 55% at Uncommon, 40% at Rare and 25% at Legendary. Watch one ad before the job for +15%. A miss uses up the material, the Foot Prints and the gem, and TRY AGAIN reopens the same recipe.",
+            "The Tailor menu is redesigned around CRAFT: pick CRAFT or LIBRARY, then your item. Gem upgrades have their own GEMS bar, showing the gems you hold.",
+            "Item upgrades and Ascension are gone. Items you already climbed keep their stats, and an upgrade already running still finishes.",
+            "A new shoe: Gusto, a chunky trail hiker. It drops from crates at every rarity and is a new base in the Tailor.",
+            "The Achievement earned pop-up matches the app and shows your next achievement and how far you have to go."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "Smoother scrolling on every screen: the crate bar, inventory plates, keys and glows are drawn once instead of every frame.",
+            "Leaders, Profile and open sheets no longer rebuild on every step while you walk.",
+            "The step counter reads its motion sensor in batches, which keeps frames smooth while tracking.",
+            "Goals: the RECOMMENDED band sits inside the card again."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "With your phone's text size turned up, the Goals tab, goal setup and the \"Lower your goal?\" warning no longer run words off the edge."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.5.0",
       "sections": [

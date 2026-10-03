@@ -1,6 +1,37 @@
 {
-  "latest": "2.6.0",
+  "latest": "2.7.0",
   "releases": [
+    {
+      "version": "2.7.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Your first blueprint comes with a walkthrough: Home points to it in your Inventory, shows how to learn it, then walks you through a practice craft in the real Tailor, one step at a time. The practice spends nothing and makes nothing, and at the end it says what a real craft still needs.",
+            "Your first crate now brings the 200 Foot Prints it costs to unlock, and it opens instantly, with no unlock timer.",
+            "New players get a short welcome on Home: setting a daily goal, signing in with Google for the leaderboards, and the first crate, 1,000 steps away.",
+            "WALKn tells you when an update is waiting, even if you never open the app: \"Update available\", or \"Update required\" when you have to update to keep earning. Open WALKn and the update installs in the app."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "Home runs smoother when you are not scrolling: the shoe card and the cards below it no longer redraw every frame.",
+            "Tapping an item in your inventory opens a new menu: a bigger picture, where the item is and where it came from, and the actions. A locked socket or a charm too rare for your shoe says why.",
+            "The required-update screen is redesigned and explains what waiting costs. If Google Play isn't offering the update yet, it waits and starts the download as soon as Play does.",
+            "The Tailor shows shoe models four across, names lace stats in full, and the Rugged shoe can now be crafted once you find its blueprint.",
+            "Deleting your account, switching accounts or signing out now starts the new account completely clean.",
+            "Invites: the Welcome Key is gone from the welcome package, since every first crate now opens instantly."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Tailor: stat names on the Build step no longer cut off, and a one-stat lace or charm no longer says the other stats may roll."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.6.0",
       "sections": [

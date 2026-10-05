@@ -1,6 +1,36 @@
 {
-  "latest": "2.7.0",
+  "latest": "2.8.0",
   "releases": [
+    {
+      "version": "2.8.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "When you earn an achievement you can pin it to your player card straight from its pop-up. It goes on the right of your shelf, and on a full shelf the first one comes off (the pop-up says which). Your shelf shows only what you pin."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "Home has a new dark console look: the cards sit on a steel plate with even spacing, and the status pill under STEPS TODAY is redesigned and easier to read.",
+            "Your player card is redesigned, and the picture you share is now the same card, sized to post anywhere without being cropped. Your keys sit under the card and are never in the picture.",
+            "The share preview is dark and shows the picture at full size before you share it, for every picture you can share.",
+            "The Luck line under WALKn Crates shows how much more Luck opens crate spots 5 and 6 every day, and your odds of each crate tier.",
+            "Another player's card opens in a pop-out sized to it, shows which day its week is from, and shows their achievement count even with nothing pinned.",
+            "A new player's first days no longer count as missed goals, and a streak under 3 days reads No tier yet on every card."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Deleting your account, signing out or switching accounts clears the old account's reminders.",
+            "A Rarity Gem's card says it crafts at its tier (items can't be upgraded since 2.6.0).",
+            "The tracking notification shows the real damage penalty, the same as Home."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.7.0",
       "sections": [

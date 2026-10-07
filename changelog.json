@@ -1,6 +1,38 @@
 {
-  "latest": "2.9.0",
+  "latest": "2.10.0",
   "releases": [
+    {
+      "version": "2.10.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Tap an unlocking crate for a new timer card: a ring around the crate shows the time left and what one ad takes off, today's ads show as coins, and OPEN CRATE opens it the moment the timer ends."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "When an ad pays, the crate timer jumps with an animation, and if no ad loads the card stays open so you can try again.",
+            "The step pill is wider and easier to read, and says \"Checking motion\" while it checks motion that looks unusual.",
+            "Under WALKn Crates, each tier's chance shows its crate, and your Luck number sits centered under LUCK.",
+            "While WALKn is still learning your walking pace, the PACE tag and the Goals tab label show in amber."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Changing the phone's date or time zone no longer finishes timers early or starts a new day early.",
+            "A faked GPS location and gaps in GPS no longer earn distance; your steps still count.",
+            "A shaken phone, or one left on a vibrating device, no longer counts as walking. Real walking, indoors or out, is never limited.",
+            "Invite crates and cloud restores can no longer be used to claim extra rewards.",
+            "The Tailor always shows your lace when you craft one: the lace design is now free for everyone.",
+            "One bad leaderboard row no longer stops the board loading for everyone.",
+            "On the Goals tab, the Foot Prints icon lines up with your goal reward."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.9.0",
       "sections": [

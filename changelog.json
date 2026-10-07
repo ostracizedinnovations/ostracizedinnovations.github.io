@@ -1,6 +1,41 @@
 {
-  "latest": "2.8.0",
+  "latest": "2.9.0",
   "releases": [
+    {
+      "version": "2.9.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "You can pin an achievement to your player card straight from its details pop-up, the same way as from the Achievement earned card."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "The update card on Home is redesigned: an animated picture shows the update coming from Google Play to your phone, it lists what's new with both version numbers, says exactly what stops on a required update's date, and shows a live countdown, the download, the restart and a download that stopped.",
+            "The watch sheet is redesigned: an animated picture of your phone and watch, the four tiles you'll get, both versions on an update, and three small watches that act out adding the tiles. When your watch is out of reach, its pop-up shows three things to check and turns to \"back in reach\" by itself.",
+            "The badge on your player card and on the picture you share is almost twice as big, with a bigger profile picture beside it, so you can see its details.",
+            "The Luck line under WALKn Crates shows the chance of each crate tier, Common to Legendary, each in its own color.",
+            "The Edit Pins screen matches the app's dark look, and the walkers count under the WALKn logo is a live pill that counts up when the number rises.",
+            "Dark cards across the app share the daily goal card's deeper background; equipped shoes say EQUIPPED; only a stat's icon and number open its card."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "The update card says when a download stops instead of going back to UPDATE, never claims it's downloading before Google Play agrees, and keeps its deadline current.",
+            "The watch sheet no longer opens twice or on top of the Tailor or another pop-up.",
+            "Leaving Edit Pins asks whether to keep your new pins instead of throwing them away, and a full shelf says why another tap does nothing.",
+            "The rate-WALKn prompt waits for the next app open instead of losing its moment.",
+            "The walkers count includes you as soon as your walk counts and refreshes when the day resets.",
+            "The step status pill no longer flickers when the phone is just nudged.",
+            "The goal card and Goals tab no longer show a streak tier's bonus before you've earned it.",
+            "At large system text, Home, the navigation, the shoe Deck and card, the Tailor's tools card and the first level-up walkthrough no longer overflow or cut off numbers."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.8.0",
       "sections": [

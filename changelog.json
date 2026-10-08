@@ -1,6 +1,21 @@
 {
-  "latest": "2.10.0",
+  "latest": "2.11.0",
   "releases": [
+    {
+      "version": "2.11.0",
+      "sections": [
+        {
+          "heading": "Improved",
+          "lines": [
+            "Your steps now count toward distance everywhere, indoors and at work too, not only on walks GPS can measure.",
+            "Each step counts as a stride worked out from your height and walking pace, so a slow shuffle is a shorter step than a brisk walk. Add your height under Settings for a closer figure.",
+            "Outdoors, GPS still measures your walk, and the longer of the two counts, never both.",
+            "More distance means more Foot Prints and shoe XP on most days, and your shoe wears down at the same pace.",
+            "Without location, WALKn now says your distance is estimated from your steps, instead of saying nothing is earned."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.10.0",
       "sections": [

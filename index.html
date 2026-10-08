@@ -2440,6 +2440,34 @@
       .cta { margin-top: 14px; }
       .hero .slide-inner { padding-bottom: 56px; }
     }
+
+    /* ── ask 2026-10-08: the learned stride on the Real steps frame ── */
+    #fair .fair-facts li { padding: 13px 0 12px; }
+    .vd-dist { display: flex; align-items: baseline; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
+    .vd-dist b { font: 600 clamp(24px, min(2.6vw, 4.2vh), 34px)/1 var(--editorial); letter-spacing: -.02em; color: var(--ed-ink); font-variant-numeric: tabular-nums; }
+    .vd-dist small { font: 500 14px/1.2 var(--editorial); color: var(--ed-mute); }
+    .vd-dist em, .vd-eq em { font-style: normal; color: var(--ed-ink); }
+    .vd-chip { font: 700 10px/1 var(--editorial); letter-spacing: .14em; color: #e9c46a; border: 1px solid rgba(233,196,106,.55);
+      background: rgba(233,196,106,.1); border-radius: 4px; padding: 4px 6px; align-self: center; }
+    .vd-stack { width: 100%; }
+    .verdict:has(.vd-stack) { width: min(100%, 440px); }
+    .vd-gauge { margin: clamp(22px, 3.6vh, 34px) 0 0; padding-top: clamp(16px, 2.6vh, 24px); border-top: 1px solid rgba(235,232,225,.16); }
+    .vd-gauge img { width: 100%; border-radius: 12px; box-shadow: 0 0 0 1px rgba(255,255,255,.07); }
+    .vd-gauge figcaption { margin-top: 10px; font: 500 13px/1.45 var(--editorial); color: var(--ed-mute); }
+    .vd-eq { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.3fr) minmax(0, 1fr); align-items: end; gap: 14px;
+      margin-top: clamp(22px, 3.6vh, 34px); padding-top: clamp(16px, 2.6vh, 24px); border-top: 1px solid rgba(235,232,225,.16); }
+    .eq-cell { display: grid; gap: 6px; min-width: 0; }
+    .eq-cell small { display: flex; align-items: center; gap: 7px; min-height: 20px; font: 600 10.5px/1 var(--editorial); letter-spacing: .16em; color: var(--ed-mute); white-space: nowrap; }
+    .eq-val { display: flex; align-items: center; gap: 8px; }
+    .eq-val .vd-chip { padding: 3px 5px; font-size: 9px; letter-spacing: .12em; }
+    .eq-cell .vd-add { font-size: 12px; letter-spacing: 0; }
+    .eq-cell b { font: 600 clamp(22px, min(2.3vw, 3.8vh), 30px)/1 var(--editorial); letter-spacing: -.02em; color: var(--ed-ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .eq-op { font: 500 16px/1 var(--editorial); font-style: normal; color: var(--ed-ink); letter-spacing: 0; }
+    @media (max-width: 760px) {
+      .vd-eq { grid-template-columns: 1fr; gap: 12px; }
+      .eq-cell { grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
+      .vd-gauge figcaption { display: none; }
+    }
   </style>
 </head>
 <body class="intro" data-slide="0">
@@ -2731,21 +2759,13 @@
     <section class="slide" id="fair" data-label="Real steps" data-tint="rgba(47,191,110,.18)">
       <div class="slide-inner"><div class="wrap fit feature">
         <div class="copy">
-          <h2 data-s>Shaking your phone earns <em>nothing.</em></h2>
-          <p data-s>WALKn checks every step against your walking rhythm and, outdoors, the GPS. New steps wait until it's sure you're walking, then count in full.</p>
+          <h2 data-s>Real steps, at your <em>real stride.</em></h2>
+          <p data-s>WALKn checks every step against your walking rhythm and, outdoors, the GPS. Each step it counts also covers distance at your own stride, measured on your outdoor walks.</p>
           <ul class="fair-facts" data-s>
-            <li><b>Shakes and pickups</b><span>A shaken phone has the wrong rhythm, and a few pickups never add up to a walk.</span></li>
-            <li><b>Car and bus rides</b><span>Spotted by their speed and dropped.</span></li>
-            <li><b>Treadmills count</b><span>Indoors, where GPS can't help, your walking rhythm confirms the steps.</span></li>
+            <li><b>Shakes and pickups</b><span>A shaken phone has the wrong rhythm, and a few pickups never add up to a walk.</span></li><li><b>Car and bus rides</b><span>Spotted by their speed and dropped.</span></li><li><b>Treadmills count</b><span>Indoors, your rhythm confirms the steps, and each one counts at your stride.</span></li><li><b>Your stride, measured</b><span>About 30 minutes of walking outside with GPS and WALKn knows your step length, for your distance and your calories. Typing a taller height changes nothing.</span></li>
           </ul>
         </div>
-        <div class="verdict" data-s aria-label="The app's step status: walking outside is Verified, a treadmill is Indoor mode, shaking the phone is Unusual motion, a car is Vehicle; only the first two count" role="img">
-          <div class="vd-scene"><span class="on">Walking outside</span><span>On a treadmill</span><span>Shaking the phone</span><span>In a car</span></div>
-          <div class="vd-pill"><img class="p-warmup" src="img/pill_warmup.webp" alt="" /><img class="p-verified on" src="img/pill_verified.webp" alt="" /><img class="p-indoor" src="img/pill_indoor.webp" alt="" /><img class="p-unusual" src="img/pill_unusual.webp" alt="" /><img class="p-vehicle" src="img/pill_vehicle.webp" alt="" /></div>
-          <div class="vd-count"><b>4,218</b><small>steps today</small><span class="vd-add"></span></div>
-          <div class="vd-tag"><i></i><span>Counted</span></div>
-        </div>
-      </div></div>
+        <div class="verdict" data-s aria-label="The app's step status: walking outside is Verified, a treadmill is Indoor mode, shaking the phone is Unusual motion, a car is Vehicle; only the first two count" role="img"><div class="vd-scene"><span class="on">Walking outside</span><span>On a treadmill</span><span>Shaking the phone</span><span>In a car</span></div><div class="vd-pill"><img class="p-warmup" src="img/pill_warmup.webp" alt="" /><img class="p-verified on" src="img/pill_verified.webp" alt="" /><img class="p-indoor" src="img/pill_indoor.webp" alt="" /><img class="p-unusual" src="img/pill_unusual.webp" alt="" /><img class="p-vehicle" src="img/pill_vehicle.webp" alt="" /></div><div class="vd-eq" aria-hidden="true"><div class="eq-cell"><small>STEPS<span class="vd-add"></span></small><b class="eq-steps">4,218</b></div><div class="eq-cell"><small><i class="eq-op">&times;</i>YOUR STRIDE</small><b class="eq-val">30.1 in<span class="vd-chip">MEASURED</span></b></div><div class="eq-cell"><small><i class="eq-op">=</i>DISTANCE</small><b class="vd-mi">2.01 mi</b></div></div><div class="vd-tag"><i></i><span>Counted</span></div></div>
       </div></div>
     </section>
 
@@ -3936,7 +3956,7 @@
     (function () {
       var sec = document.getElementById('fair'); if (!sec) return;
       var vd = sec.querySelector('.verdict'), scenes = [].slice.call(vd.querySelectorAll('.vd-scene span'));
-      var img = function (k) { return vd.querySelector('.p-' + k); }, num = vd.querySelector('.vd-count b');
+      var img = function (k) { return vd.querySelector('.p-' + k); }, num = vd.querySelector('.vd-count b') || vd.querySelector('.eq-steps');
       var tag = vd.querySelector('.vd-tag span'), add = vd.querySelector('.vd-add');
       if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
       var C = { warmup: '#6aaaff', verified: '#3fd17a', indoor: '#3cc6e0', unusual: '#ff8a3d', vehicle: '#ff4a52' };
@@ -3958,6 +3978,9 @@
         for (var k = 0; k < T.length; k++) if (t >= T[k][2]) i = k;
         if (i !== cur) { cur = i; show(i); lastStep = now; }
         if (T[cur][3] && now - lastStep >= STEP_MS) { lastStep = now; steps++; num.textContent = fmt(steps); }
+        var mi = vd.querySelector('.vd-mi'), es = vd.querySelector('.eq-steps');
+        if (es) es.textContent = fmt(steps);
+        if (mi) { var v = (steps * 0.7655 / 1609.344).toFixed(2); mi.textContent = mi.closest('.vd-eq') ? v + ' mi' : v; }
         raf = requestAnimationFrame(tick);
       }
       function sync() {

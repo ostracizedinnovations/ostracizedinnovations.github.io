@@ -1,6 +1,32 @@
 {
-  "latest": "2.12.0",
+  "latest": "2.13.0",
   "releases": [
+    {
+      "version": "2.13.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "A notification tells you when your Tailor craft, upgrade or gem job is done, even with WALKn closed. Turn it off under Notifications > Gear > Tailor Job Done."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "The Deck shows what your gear takes off: a Lace Saves box on the Level Up bar, and on a repair the full price struck through with a chip for each cut (your lace, your Durability) and the Foot Prints you saved.",
+            "Monthly 1st place now pays a Rare blueprint of any kind (a shoe, lace or charm design) instead of a Rare charm blueprint.",
+            "With WALKn closed, you hear about a new update, regular or required, within about 15 minutes of Google Play offering it, instead of up to an hour."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Another walker's player card opens instantly and finished: no blank card, no flip, no pop-in. If a card can't load, you're told so with a Try again button.",
+            "On a small phone with large text, the Deck's damage zones no longer spill past their boxes."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.12.0",
       "sections": [

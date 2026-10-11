@@ -1,6 +1,38 @@
 {
-  "latest": "2.11.0",
+  "latest": "2.12.0",
   "releases": [
+    {
+      "version": "2.12.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Spending a stat point opens a new card: one bar from the lowest roll to MAX ROLL to MAXED, what the point buys at your pace, and a key you hold to spend, so a stray tap can never spend a permanent point.",
+            "Weekly 1st place now also wins an Uncommon Blueprint for a design you have not learned, on top of its Keys and Foot Prints.",
+            "Your stride is learned on steady outdoor walks, so indoor steps count at your real step length. See it under Settings > Stride.",
+            "Your shoe's Luck now raises the Blueprint chance of every crate item."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "Rarer blueprints teach new shoe models and charm figures more often: 10% Common, 20% Uncommon, 35% Rare, 50% Legendary.",
+            "The Tailor's screens are on the dark page, and the CRAFT tile has real scissors.",
+            "Durability past its max roll saves shoe materials on repairs; MAXED never needs them.",
+            "Leveling up and repairing get a proper ad card showing exactly how much time an ad takes off.",
+            "Every pop-up has the same close button, and another walker's player card opens without a jump."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Your first week's goal checks now start at a nightly reset, never partway through a day.",
+            "Raising your goal after today's goal is done now sets tomorrow's goal instead of doing nothing.",
+            "A missed gem upgrade no longer shows the result before the reveal."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.11.0",
       "sections": [

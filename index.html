@@ -2468,6 +2468,11 @@
       .eq-cell { grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
       .vd-gauge figcaption { display: none; }
     }
+  
+    /* 2026-10-11: animations in frames off screen hold still. A per-frame script loop (the Wear frame's dwell ring)
+       makes the browser restyle EVERY running CSS animation each frame, hidden frames included (the Boards motes);
+       paused, they cost nothing. The leaving frame keeps playing through its exit. Rule: walkn-ads-consent-analytics. */
+    .slide:not(.active):not(.leaving) *, .slide:not(.active):not(.leaving) *::before, .slide:not(.active):not(.leaving) *::after { animation-play-state: paused !important; }
   </style>
 </head>
 <body class="intro" data-slide="0">

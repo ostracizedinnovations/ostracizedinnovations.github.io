@@ -1,6 +1,34 @@
 {
-  "latest": "2.13.0",
+  "latest": "2.14.1",
   "releases": [
+    {
+      "version": "2.14.1",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "The Trail is rebuilt from real places: all 320 achievements are real bridges, trails, rivers, crossings, heights and journeys at their true distance, each with its own emblem, all the way to the Moon. Achievements you already hold stay held.",
+            "Six milestone medals climb a ladder from bronze to cosmic, and earning one is a moment: the medal drops in and announces your new title.",
+            "Trail milestones are badges: claim one in Profile > Badges once you have walked it (including ones you already passed) and wear it on your player card.",
+            "Three prestige finishes in the Tailor, each taught only by its badge: Moondust (the Moonwalker), Early Build (the Alpha Tester) and Broadcast (the Director).",
+            "The Director and Moonwalker badges now frame your picture, and the Alpha Tester frame is redrawn as a watch dial.",
+            "A Breakdown key on the Deck's Damage & Repair card shows how your Foot Prints split between level-ups and repairs over the last 7 days, and what your lace and Durability saved you."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "Level-ups cost 3x the Foot Prints and take twice as long. A repair now costs a share of your shoe's own level-up price (60% on a Common up to 90% on a Legendary, always less than a level-up) and takes 15% of its time.",
+            "Your charm's Luck now raises your Blueprint chance, and Luck past your shoe's max roll keeps raising it.",
+            "Achievement rewards follow the new Trail: Foot Prints by distance, and milestones pay crates, keys and Blueprints.",
+            "The Library tells you where each blueprint came from: a crate, a leaderboard prize, scrapping an item, or a trail milestone.",
+            "Crate slots you can't fill today show a padlock instead of a +.",
+            "The achievement pop-up's Next strip shows just the next achievement and the distance to go.",
+            "The Director badge now frames your picture and teaches its own finish instead of adding +10% Foot Prints."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.13.0",
       "sections": [

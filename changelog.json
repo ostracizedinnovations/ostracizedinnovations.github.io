@@ -1,6 +1,37 @@
 {
-  "latest": "2.14.1",
+  "latest": "2.15.0",
   "releases": [
+    {
+      "version": "2.15.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Each Walk Boost pass shows what it gave you: \"+26 SO FAR\" while it runs, then PASS COMPLETE with its Foot Prints flying into your balance.",
+            "From 6 PM the goal card tells you when your streak is on the line, with the steps left and the time to midnight.",
+            "Your Walk Boost passes are backed up with your account, so a reinstall or a new phone keeps them."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "Walk Boost passes pay double Foot Prints (2x, was +50%).",
+            "A day of the week you always walk less on asks less from its second week.",
+            "The Tailor's Build and Rarity boxes show their icons clearly, and the craft steps scroll more smoothly.",
+            "An empty place on the Leaders podium stays shut and dark until someone takes it."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "The 10 PM streak warning no longer goes missing the day after you hit your goal.",
+            "A Walk Boost pass doubles only the steps it covers, and waits while your shoe is repairing or leveling up.",
+            "The pity crate no longer takes one of the next day's crate spots.",
+            "The Walk Boost bar's title fits at the largest text size."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.14.1",
       "sections": [

@@ -1,6 +1,34 @@
 {
-  "latest": "2.15.0",
+  "latest": "2.16.0",
   "releases": [
+    {
+      "version": "2.16.0",
+      "sections": [
+        {
+          "heading": "Improved",
+          "lines": [
+            "A broken shoe (100% damage) takes you off every leaderboard until you repair it, and steps walked on it never count on a board. The app warns you at 70% and 85%.",
+            "Walk Boosts have a new look: a footprint trail you walk across, and BOOST WALKED when one is done.",
+            "The step pill says plainly whether your steps are counting: one word and one color per state.",
+            "Crafting costs twice the Foot Prints, and materials drop in bigger stacks.",
+            "Blueprints teach shoe models and charm figures far more often.",
+            "The watch hears about crates, timers and boosts in about 10 seconds.",
+            "Ads load only when you go to watch one, and the button shows when one is loading."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "No more steps from picking up or handling your phone in bed.",
+            "\"Sensor stopped\" no longer sticks after the sensor recovers.",
+            "Walking past the day's crate cap no longer gives you an early crate the next morning.",
+            "REWARD TRIMMED's X now hides the message for the day.",
+            "Closing an ad early no longer says no ad could be loaded.",
+            "The watch stays in step after a timer ad."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.15.0",
       "sections": [

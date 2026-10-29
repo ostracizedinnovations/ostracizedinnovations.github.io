@@ -1,6 +1,30 @@
 {
-  "latest": "2.16.0",
+  "latest": "2.17.0",
   "releases": [
+    {
+      "version": "2.17.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "The shoe's lace and charm slots are redesigned: each item sits on a white tile framed in its rarity's metal, so dark laces and charms stand out.",
+            "Laces and charms show on the same white tiles in the Inventory, the item pop-up and the Tailor's print choices.",
+            "Tap inside an ad by mistake and a short tip shows where its X is once you're back.",
+            "A quiet hint under every WATCH AD key: when the countdown ends, close the ad with the X."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "\"Out walking\" counts everyone who walked 100 steps today, broken shoe or not.",
+            "Ads no longer stay off for the whole session after a slow consent check.",
+            "The Tailor's work order no longer cuts off its times on narrow phones or at large text.",
+            "Timer card labels fit at the largest text size.",
+            "The held crate's title is centered, and the gem bench's odds ad can't be asked for twice."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.16.0",
       "sections": [

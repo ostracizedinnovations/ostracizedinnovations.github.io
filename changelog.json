@@ -1,6 +1,25 @@
 {
-  "latest": "2.17.0",
+  "latest": "2.18.0",
   "releases": [
+    {
+      "version": "2.18.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Set your own shoe wear warning: how many of your steps before damage starts cutting Foot Prints and crate drops (Settings > Notifications > Gear).",
+            "The Deck's damage card shows about how many steps until the penalty starts."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "The update card hangs from the top of Home; tap it to read everything that's new.",
+            "No ad-close hint under the Walk Boost button."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.17.0",
       "sections": [

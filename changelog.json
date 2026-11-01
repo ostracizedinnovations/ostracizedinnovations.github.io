@@ -1,6 +1,37 @@
 {
-  "latest": "2.18.0",
+  "latest": "2.19.0",
   "releases": [
+    {
+      "version": "2.19.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "A new tutorial walks you through the whole game; replay it, or any chapter, from Profile > Settings > Tutorial.",
+            "Home's NEXT line names the one thing waiting on you, a tap away.",
+            "A calmer Home for new players: repairs, crafting and mastery wait in an UNLOCKS LATER list until they matter.",
+            "Bigger crate openings: a darker room, sparks off the lock, coins and gems spilling out, and a show that grows with the crate.",
+            "Finding a blueprint is its own moment: a pen of light draws the design as the card lands."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "Goal setup explains the three rules first, and every goal screen uses the same words.",
+            "Clearer wear and Luck readouts.",
+            "No ad-close hints under the WATCH AD keys."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Craft, level-up, repair and crate alerts arrive on time.",
+            "The shoes on the Leaders podium are sharp.",
+            "No white flash between pages."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.18.0",
       "sections": [

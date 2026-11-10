@@ -1,6 +1,35 @@
 {
-  "latest": "2.19.1",
+  "latest": "2.20.0",
   "releases": [
+    {
+      "version": "2.20.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Trade a Rarity Gem in the Exchange for a Crate Key or Repair Kit of its rarity or lower, or for Foot Prints. Tap EXCHANGE under a gem, or the trade key on the Tailor's GEMS bar.",
+            "A new tutorial chapter, EXCHANGE, right after TAILOR."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "Exchange trades confirm on a new plate showing what you got and paid, counting repeats (x2, x3).",
+            "Coins and gems from an opened crate look solid as they tumble and land."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Exchange trades can't fill your bag past 250 keys or kits, and its text fits at large sizes.",
+            "Tapping a podium shoe on Leaders lifts one shoe cleanly into the big view.",
+            "Scrapping a shoe in your bag returns its lace and charm instead of destroying them.",
+            "The Laces and Charms tabs show the ones fitted to shoes in your bag.",
+            "The Tailor's print tiles show the print itself, and its shoe labels point at the right part on every model."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.19.1",
       "sections": [

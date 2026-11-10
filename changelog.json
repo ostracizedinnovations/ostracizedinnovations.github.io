@@ -1,6 +1,28 @@
 {
-  "latest": "2.20.0",
+  "latest": "2.21.0",
   "releases": [
+    {
+      "version": "2.21.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Your streak shows on the top bar: a round badge left of your Foot Prints counts its days, in your streak tier's color."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "The goal card shows what your streak adds to the goal reward, and a tag says what the next tier adds and on which day.",
+            "The Luck line on the crate bar is bigger and easier to read.",
+            "Opened crates spill real 3D coins, gems and rolled blueprints that settle on the floor.",
+            "Tapping a podium shoe on Leaders glides it smoothly onto a new, clearer card.",
+            "Crafting a shoe: the mudguard and sole start black, and prints go on the upper and panel.",
+            "Shoe prints follow the shoe's shape, take its shading and stop at its seams."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.20.0",
       "sections": [

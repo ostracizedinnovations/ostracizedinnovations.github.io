@@ -1,6 +1,33 @@
 {
-  "latest": "2.21.0",
+  "latest": "2.22.0",
   "releases": [
+    {
+      "version": "2.22.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "A Rarity Gem can unlock a crate, like a key: it opens a crate of its own rarity or lower, waives the Foot Prints, and the timer runs as usual. The unlock card offers the cheapest gem you hold that fits."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Opening a crate: the padlock snaps open and stays hanging in the hasp's loop until the burst throws it clear.",
+            "The Leaders shoe lift no longer hitches when the card appears or when it closes.",
+            "The Tailor: a finish can only go on the upper and panel of a shoe, not the mudguard or sole.",
+            "The crate bar's drop-chance bar runs right up to the first crate icon."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "The crate unlock card always offers Foot Prints and the free ad, even when you hold a key or a gem; short on Foot Prints, that option shows greyed with how many more you need.",
+            "The streak badge beside the Foot Prints counter now shows the same animated bolt as the goal card."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.21.0",
       "sections": [

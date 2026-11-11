@@ -1,6 +1,33 @@
 {
-  "latest": "2.22.0",
+  "latest": "2.23.0",
   "releases": [
+    {
+      "version": "2.23.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Experience Gain past its max roll now makes every level-up cheaper: up to 15% (Common) to 35% (Legendary) off at a full band past the max. A charm's Experience Gain counts toward it too. It stacks with a lace's level-up cut; repairs cost the same."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "The Deck's LEVEL UP band shows what the lace and Experience each save.",
+            "The Experience card, the stat point pop-up, the Path Ahead and the tutorial explain the new cut; on a max-level shoe the pop-up names Mastery levels.",
+            "The spend breakdown has a line for what Experience saved on level-ups this week.",
+            "The Tailor's lace print tiles show each print on a round cord at its real fineness, so similar prints are easy to tell apart."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Leaders: tapping a podium shoe the first time shows the shoe on its card, and its glow no longer changes as it lands.",
+            "Leaders: podium shoes and the shoe card show each walker's lace print, finish and crafted lace."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.22.0",
       "sections": [

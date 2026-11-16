@@ -1,6 +1,36 @@
 {
-  "latest": "2.23.0",
+  "latest": "2.24.0",
   "releases": [
+    {
+      "version": "2.24.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Your inventory's OWNED and CRAFTING are now full-width tabs that show what each side holds, and the top of OWNED has a CRAFTING row with your materials and blueprints.",
+            "Profile > Stats has a COST BREAKDOWN: which lace fits your walking, your week's level-up and repair bills, and what maxing each stat would save, for any shoe you own."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "Your last 7 days of spending moved from the Deck to Profile > Stats.",
+            "The repair cost box lists what your lace and Durability save; the repair slider is cleaner.",
+            "The streak badge shows the day count on a ribbon.",
+            "The Foot Prints balance has commas.",
+            "The goal card's bonus chip reads \"+N ON DAY N\"."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "The spending advice no longer suggests swapping a big Level-Up Cost lace for one that saves less.",
+            "The \"steps until your shoe earns less\" warning comes back after every repair.",
+            "Shoe print blueprints show the print on its own again."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.23.0",
       "sections": [

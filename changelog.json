@@ -1,6 +1,40 @@
 {
-  "latest": "2.24.0",
+  "latest": "2.25.0",
   "releases": [
+    {
+      "version": "2.25.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Tier up: at its top level a shoe's LEVEL UP key becomes TIER UP, and the Tailor's TIER UP bar takes any top-level shoe, lace or charm up a tier for Rarity Gems and Foot Prints. A miss never loses the item, and a shoe stays on your feet.",
+            "Redesign: give any shoe, lace or charm a new look with a Redesign Kit and Foot Prints. It keeps its tier, stats, level and sockets.",
+            "On about one crate in four, an ad can double one revealed kit, key or gem, once a day.",
+            "Walk Boosts are gold trading cards: tap a card back to get a boost, and while it runs your next crate forges in gold.",
+            "New streak bolt animations at every tier."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "Crafting makes a Common item for Foot Prints alone (500 for a shoe, 250 for a lace or charm) and never misses; any learned look works on any craft.",
+            "Crates no longer hold materials and drop far more Blueprints. Materials you owned became Foot Prints (25 each), and scrapping pays Foot Prints.",
+            "Repairs need one kit, Foot Prints and the timer, no materials.",
+            "Levels are one climb: 10 Common, 20 Uncommon, 30 Rare, 40 Legendary. Mastery starts at Legendary level 40.",
+            "The inventory opens straight on your items, with a BLUEPRINTS shelf at the end of each tab.",
+            "The boost card says when boosts end; in the last hour with a streak on the line the goal bar burns like a fuse; the streak badge strikes when today's goal lands.",
+            "The crate unlock card leads with the free ad and prices gems."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Walk Boosts end at midnight: unwalked boosted steps no longer carry into the next day.",
+            "Your badge title and avatar frame stay on your leaderboard profile for everyone."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.24.0",
       "sections": [

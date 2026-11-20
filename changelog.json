@@ -1,6 +1,29 @@
 {
-  "latest": "2.26.0",
+  "latest": "2.27.0",
   "releases": [
+    {
+      "version": "2.27.0",
+      "sections": [
+        {
+          "heading": "Improved",
+          "lines": [
+            "Suede looks like suede: a soft brushed nap of fine fibers laid one way, instead of scattered spots."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Eleven shoe prints repeat with no visible seam: chevron, wave, hearts, herringbone, skulls, tiger, damask, flames, ripples, feathers and tribal.",
+            "Carbon fiber and glitter charms look right at every size: a fine woven twill and a fine sparkle that keeps the charm's color.",
+            "A shoe's sole is always plain; an older crafted shoe with a print on its sole shows it in its plain color.",
+            "The inventory scrolls smoothly: shoe, lace and charm finishes no longer pop in.",
+            "The Tailor's stage no longer blinks out as you scroll the Look step.",
+            "The charm on your Home shoe no longer jumps the first time you scroll.",
+            "Tapping a podium shoe on Leaders shows one shoe, never two."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.26.0",
       "sections": [

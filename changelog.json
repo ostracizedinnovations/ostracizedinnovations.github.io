@@ -1,6 +1,33 @@
 {
-  "latest": "2.25.0",
+  "latest": "2.26.0",
   "releases": [
+    {
+      "version": "2.26.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Two new charms: Baby Grizzly and Arctic Fox.",
+            "Redesign Kits trade in the Exchange: 2 Redesign Kits and Foot Prints swap for a Common Repair Kit or Crate Key, 3 for an Uncommon one, and 2 Common kits or keys swap for a Redesign Kit."
+          ]
+        },
+        {
+          "heading": "Improved",
+          "lines": [
+            "Tailor colors: every rarity's colors are on one page, and the shoe, lace or charm you're crafting stays pinned at the top while you pick, in Craft and in Redesign.",
+            "The streak bolt glows like real light, and from Blaze II up each strike gets more time to crackle.",
+            "The Redesign Kit's bag tile says how to use it and has the EXCHANGE bar."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "The Walk Boost bar's ENDS AT MIDNIGHT tag shows only while a boost is active.",
+            "The Path Ahead sheet fits small phones with large text."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.25.0",
       "sections": [

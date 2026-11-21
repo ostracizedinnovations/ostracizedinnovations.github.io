@@ -1,6 +1,26 @@
 {
-  "latest": "2.27.0",
+  "latest": "2.28.0",
   "releases": [
+    {
+      "version": "2.28.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "Laces and charms have a Tier up row in their item menu: it opens the Tailor's bench for that item and says what is still missing (gems, Foot Prints, or a running job) when it cannot go yet."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "Tiering up a lace or charm no longer takes it off your shoe or out of your bag: it stays where it is and keeps working while the Tailor works, then climbs a tier in place when you collect.",
+            "Redesign and Tier up no longer open a blank screen for a lace or charm fitted to a shoe in your bag, and the new look stays on that shoe.",
+            "The crate-found and goal chimes briefly lower your music and let it come straight back, instead of making music and video apps pause.",
+            "The green sparks from clearing your daily goal no longer get stuck on the goal card when you reopen the app right as the goal clears."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.27.0",
       "sections": [

@@ -1,6 +1,24 @@
 {
-  "latest": "2.28.0",
+  "latest": "2.29.0",
   "releases": [
+    {
+      "version": "2.29.0",
+      "sections": [
+        {
+          "heading": "New",
+          "lines": [
+            "WALKn speaks Korean: on a phone set to Korean, Home, the Tailor, the inventory, Leaders, Profile, the tutorial and every notification are in Korean. Spot a mistake? Settings > Improve the translation.",
+            "Stat point advice: the stat each point does the most for is marked with its gain, and with 2 or more points SUGGEST places them all the recommended way for you to confirm (CLEAR takes them back)."
+          ]
+        },
+        {
+          "heading": "Fixed",
+          "lines": [
+            "The stat page no longer overlaps on small phones with large text, a two-digit points count no longer squeezes its badge, and the spend popup scrolls so HOLD TO SPEND is never cut off."
+          ]
+        }
+      ]
+    },
     {
       "version": "2.28.0",
       "sections": [
